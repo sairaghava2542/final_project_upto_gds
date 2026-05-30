@@ -1,0 +1,1581 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Sat May 30 15:27:30 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32lvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_31     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U968/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/a_in[0] (systolic_pe_31)
+                                                          0.00       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U45/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U54/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U58/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U31/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U60/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_199/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U126/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U151/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_193/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U38/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_195/U2/CO (FADDX1_LVT)
+                                                          0.08       4.55 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U164/SO (HADDX1_LVT)
+                                                          0.07       4.62 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U165/Y (AND2X1_LVT)
+                                                          0.04       4.66 r
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.67 r
+  data arrival time                                                  4.67
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_39     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U972/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/a_in[0] (systolic_pe_39)
+                                                          0.00       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U53/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U99/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U38/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_255/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U159/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U180/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_249/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U45/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_251/U2/CO (FADDX1_LVT)
+                                                          0.08       4.55 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U134/SO (HADDX1_LVT)
+                                                          0.07       4.62 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U135/Y (AND2X1_LVT)
+                                                          0.04       4.66 r
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.67 r
+  data arrival time                                                  4.67
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_47     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U913/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/a_in[0] (systolic_pe_47)
+                                                          0.00       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U50/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U58/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U62/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U203/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U64/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_311/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U260/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U280/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_305/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_307/U2/CO (FADDX1_LVT)
+                                                          0.08       4.55 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U238/SO (HADDX1_LVT)
+                                                          0.07       4.62 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U239/Y (AND2X1_LVT)
+                                                          0.04       4.66 r
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.67 r
+  data arrival time                                                  4.67
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_63     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U884/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[0].gen_col[0].pe_inst/a_in[0] (systolic_pe_63)
+                                                          0.00       3.06 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U49/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U57/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U61/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U34/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U63/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_7/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U104/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U130/Y (NAND2X0_LVT)
+                                                          0.04       4.09 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U132/Y (NAND3X0_LVT)
+                                                          0.04       4.13 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_2/U2/CO (FADDX1_LVT)
+                                                          0.09       4.21 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U176/Y (AO222X1_LVT)
+                                                          0.08       4.29 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_1/U2/CO (FADDX1_LVT)
+                                                          0.10       4.39 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.46 f
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_3/U2/CO (FADDX1_LVT)
+                                                          0.08       4.54 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U127/SO (HADDX1_LVT)
+                                                          0.07       4.61 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U128/Y (AND2X1_LVT)
+                                                          0.04       4.65 r
+  u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.66 r
+  data arrival time                                                  4.66
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.22
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_31     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U968/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/a_in[0] (systolic_pe_31)
+                                                          0.00       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U45/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U54/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U58/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U31/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U60/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_199/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U126/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U151/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_193/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U38/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_195/U2/CO (FADDX1_LVT)
+                                                          0.08       4.55 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U80/Y (OR2X1_LVT)
+                                                          0.04       4.59 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U81/Y (AND2X1_LVT)
+                                                          0.04       4.63 f
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[15]/D (DFFARX1_LVT)
+                                                          0.01       4.64 f
+  data arrival time                                                  4.64
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[15]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_39     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U972/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/a_in[0] (systolic_pe_39)
+                                                          0.00       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U53/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U99/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U38/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_255/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U159/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U180/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_249/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U45/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_251/U2/CO (FADDX1_LVT)
+                                                          0.08       4.55 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U131/Y (OR2X1_LVT)
+                                                          0.04       4.59 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U132/Y (AND2X1_LVT)
+                                                          0.04       4.63 f
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[15]/D (DFFARX1_LVT)
+                                                          0.01       4.64 f
+  data arrival time                                                  4.64
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[15]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_47     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U913/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/a_in[0] (systolic_pe_47)
+                                                          0.00       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U50/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U58/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U62/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U203/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U64/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_311/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U260/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U280/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_305/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_307/U2/CO (FADDX1_LVT)
+                                                          0.08       4.55 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U232/Y (OR2X1_LVT)
+                                                          0.04       4.59 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U233/Y (AND2X1_LVT)
+                                                          0.04       4.63 f
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[15]/D (DFFARX1_LVT)
+                                                          0.01       4.64 f
+  data arrival time                                                  4.64
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[15]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_31     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U968/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/a_in[0] (systolic_pe_31)
+                                                          0.00       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U45/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U54/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U58/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U31/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U60/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_199/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U126/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U151/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_193/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U38/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_195/U2/S (FADDX1_LVT)
+                                                          0.11       4.57 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U161/Y (NOR2X0_LVT)
+                                                          0.05       4.62 f
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[13]/D (DFFARX1_LVT)
+                                                          0.01       4.64 f
+  data arrival time                                                  4.64
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[13]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_39     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U972/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/a_in[0] (systolic_pe_39)
+                                                          0.00       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U53/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U99/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U38/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_255/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U159/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U180/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_249/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U45/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_251/U2/S (FADDX1_LVT)
+                                                          0.11       4.57 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U121/Y (NOR2X0_LVT)
+                                                          0.05       4.62 f
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[13]/D (DFFARX1_LVT)
+                                                          0.01       4.64 f
+  data arrival time                                                  4.64
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[13]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_47     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U913/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/a_in[0] (systolic_pe_47)
+                                                          0.00       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U50/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U58/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U62/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U203/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U64/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_311/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U260/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U280/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_305/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.47 f
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_307/U2/S (FADDX1_LVT)
+                                                          0.11       4.57 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U236/Y (NOR2X0_LVT)
+                                                          0.05       4.62 f
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[13]/D (DFFARX1_LVT)
+                                                          0.01       4.64 f
+  data arrival time                                                  4.64
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[13]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_63     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U884/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[0].gen_col[0].pe_inst/a_in[0] (systolic_pe_63)
+                                                          0.00       3.06 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U49/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U57/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U61/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U34/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U63/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_7/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U104/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U130/Y (NAND2X0_LVT)
+                                                          0.04       4.09 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U132/Y (NAND3X0_LVT)
+                                                          0.04       4.13 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_2/U2/CO (FADDX1_LVT)
+                                                          0.09       4.21 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U176/Y (AO222X1_LVT)
+                                                          0.08       4.29 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_1/U2/CO (FADDX1_LVT)
+                                                          0.10       4.39 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.46 f
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_3/U2/CO (FADDX1_LVT)
+                                                          0.08       4.54 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U124/Y (OR2X1_LVT)
+                                                          0.04       4.58 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U125/Y (AND2X1_LVT)
+                                                          0.04       4.61 f
+  u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[15]/D (DFFARX1_LVT)
+                                                          0.01       4.63 f
+  data arrival time                                                  4.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[15]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_63     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U884/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[0].gen_col[0].pe_inst/a_in[0] (systolic_pe_63)
+                                                          0.00       3.06 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U49/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U57/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U61/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U34/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U63/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_7/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U104/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U130/Y (NAND2X0_LVT)
+                                                          0.04       4.09 f
+  u_array/gen_row[0].gen_col[0].pe_inst/U132/Y (NAND3X0_LVT)
+                                                          0.04       4.13 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_2/U2/CO (FADDX1_LVT)
+                                                          0.09       4.21 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U176/Y (AO222X1_LVT)
+                                                          0.08       4.29 r
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_1/U2/CO (FADDX1_LVT)
+                                                          0.10       4.39 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.46 f
+  u_array/gen_row[0].gen_col[0].pe_inst/intadd_3/U2/S (FADDX1_LVT)
+                                                          0.11       4.56 r
+  u_array/gen_row[0].gen_col[0].pe_inst/U114/Y (NOR2X0_LVT)
+                                                          0.05       4.61 f
+  u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[13]/D (DFFARX1_LVT)
+                                                          0.01       4.63 f
+  data arrival time                                                  4.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[0].gen_col[0].pe_inst/product_pipe_reg[13]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_23     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U964/Y (AND2X1_LVT)                             0.53       3.06 f
+  u_array/gen_row[5].gen_col[0].pe_inst/a_in[1] (systolic_pe_23)
+                                                          0.00       3.06 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U52/Y (NAND2X0_LVT)
+                                                          0.37       3.43 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.12       3.55 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.62 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U101/CO (FADDX1_LVT)
+                                                          0.09       3.71 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.74 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U68/Y (AO222X1_LVT)
+                                                          0.07       3.82 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_143/U2/CO (FADDX1_LVT)
+                                                          0.10       3.91 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U133/Y (AO222X1_LVT)
+                                                          0.08       3.99 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_138/U3/CO (FADDX1_LVT)
+                                                          0.09       4.08 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_138/U2/CO (FADDX1_LVT)
+                                                          0.09       4.16 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U158/Y (AO222X1_LVT)
+                                                          0.08       4.24 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_137/U2/CO (FADDX1_LVT)
+                                                          0.10       4.34 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U46/Y (OAI222X1_LVT)
+                                                          0.07       4.41 f
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_139/U2/CO (FADDX1_LVT)
+                                                          0.08       4.49 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U171/SO (HADDX1_LVT)
+                                                          0.07       4.56 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U172/Y (AND2X1_LVT)
+                                                          0.04       4.60 r
+  u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.61 r
+  data arrival time                                                  4.61
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[1].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_55     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U911/Y (AND2X1_LVT)                             0.53       3.06 f
+  u_array/gen_row[1].gen_col[0].pe_inst/a_in[4] (systolic_pe_55)
+                                                          0.00       3.06 f
+  u_array/gen_row[1].gen_col[0].pe_inst/U48/Y (NAND2X0_LVT)
+                                                          0.36       3.42 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U50/Y (AOI21X1_LVT)
+                                                          0.06       3.48 f
+  u_array/gen_row[1].gen_col[0].pe_inst/U64/S (FADDX1_LVT)
+                                                          0.10       3.58 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U23/Y (INVX0_LVT)
+                                                          0.03       3.60 f
+  u_array/gen_row[1].gen_col[0].pe_inst/U106/CO (FADDX1_LVT)
+                                                          0.08       3.68 f
+  u_array/gen_row[1].gen_col[0].pe_inst/U34/Y (INVX1_LVT)
+                                                          0.03       3.71 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.79 r
+  u_array/gen_row[1].gen_col[0].pe_inst/intadd_367/U2/CO (FADDX1_LVT)
+                                                          0.10       3.88 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U137/Y (AO222X1_LVT)
+                                                          0.08       3.96 r
+  u_array/gen_row[1].gen_col[0].pe_inst/intadd_362/U3/CO (FADDX1_LVT)
+                                                          0.09       4.05 r
+  u_array/gen_row[1].gen_col[0].pe_inst/intadd_362/U2/CO (FADDX1_LVT)
+                                                          0.09       4.13 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U162/Y (AO222X1_LVT)
+                                                          0.08       4.21 r
+  u_array/gen_row[1].gen_col[0].pe_inst/intadd_361/U2/CO (FADDX1_LVT)
+                                                          0.10       4.31 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U45/Y (OAI222X1_LVT)
+                                                          0.07       4.38 f
+  u_array/gen_row[1].gen_col[0].pe_inst/intadd_363/U2/CO (FADDX1_LVT)
+                                                          0.08       4.46 f
+  u_array/gen_row[1].gen_col[0].pe_inst/U174/SO (HADDX1_LVT)
+                                                          0.07       4.53 r
+  u_array/gen_row[1].gen_col[0].pe_inst/U175/Y (AND2X1_LVT)
+                                                          0.04       4.57 r
+  u_array/gen_row[1].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.58 r
+  data arrival time                                                  4.58
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[1].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.30
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[6].gen_col[0].pe_inst/product_pipe_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_15     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U903/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[6].gen_col[0].pe_inst/a_in[5] (systolic_pe_15)
+                                                          0.00       3.06 f
+  u_array/gen_row[6].gen_col[0].pe_inst/U132/Y (NAND2X0_LVT)
+                                                          0.36       3.42 r
+  u_array/gen_row[6].gen_col[0].pe_inst/U133/Y (AOI21X1_LVT)
+                                                          0.06       3.48 f
+  u_array/gen_row[6].gen_col[0].pe_inst/U135/S (FADDX1_LVT)
+                                                          0.09       3.57 f
+  u_array/gen_row[6].gen_col[0].pe_inst/intadd_87/U3/S (FADDX1_LVT)
+                                                          0.12       3.69 r
+  u_array/gen_row[6].gen_col[0].pe_inst/U64/Y (AO222X1_LVT)
+                                                          0.09       3.78 r
+  u_array/gen_row[6].gen_col[0].pe_inst/intadd_87/U2/CO (FADDX1_LVT)
+                                                          0.10       3.87 r
+  u_array/gen_row[6].gen_col[0].pe_inst/U139/Y (AO222X1_LVT)
+                                                          0.08       3.95 r
+  u_array/gen_row[6].gen_col[0].pe_inst/intadd_82/U3/CO (FADDX1_LVT)
+                                                          0.09       4.04 r
+  u_array/gen_row[6].gen_col[0].pe_inst/intadd_82/U2/CO (FADDX1_LVT)
+                                                          0.09       4.13 r
+  u_array/gen_row[6].gen_col[0].pe_inst/U164/Y (AO222X1_LVT)
+                                                          0.08       4.20 r
+  u_array/gen_row[6].gen_col[0].pe_inst/intadd_81/U2/CO (FADDX1_LVT)
+                                                          0.10       4.30 r
+  u_array/gen_row[6].gen_col[0].pe_inst/U42/Y (OAI222X1_LVT)
+                                                          0.07       4.37 f
+  u_array/gen_row[6].gen_col[0].pe_inst/intadd_83/U2/CO (FADDX1_LVT)
+                                                          0.08       4.45 f
+  u_array/gen_row[6].gen_col[0].pe_inst/U177/SO (HADDX1_LVT)
+                                                          0.07       4.52 r
+  u_array/gen_row[6].gen_col[0].pe_inst/U178/Y (AND2X1_LVT)
+                                                          0.04       4.56 r
+  u_array/gen_row[6].gen_col[0].pe_inst/product_pipe_reg[14]/D (DFFARX1_LVT)
+                                                          0.01       4.57 r
+  data arrival time                                                  4.57
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[6].gen_col[0].pe_inst/product_pipe_reg[14]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.30
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_23     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U964/Y (AND2X1_LVT)                             0.53       3.06 f
+  u_array/gen_row[5].gen_col[0].pe_inst/a_in[1] (systolic_pe_23)
+                                                          0.00       3.06 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U52/Y (NAND2X0_LVT)
+                                                          0.37       3.43 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.12       3.55 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.62 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U101/CO (FADDX1_LVT)
+                                                          0.09       3.71 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.74 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U68/Y (AO222X1_LVT)
+                                                          0.07       3.82 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_143/U2/CO (FADDX1_LVT)
+                                                          0.10       3.91 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U133/Y (AO222X1_LVT)
+                                                          0.08       3.99 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_138/U3/CO (FADDX1_LVT)
+                                                          0.09       4.08 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_138/U2/CO (FADDX1_LVT)
+                                                          0.09       4.16 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U158/Y (AO222X1_LVT)
+                                                          0.08       4.24 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_137/U2/CO (FADDX1_LVT)
+                                                          0.10       4.34 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U46/Y (OAI222X1_LVT)
+                                                          0.07       4.41 f
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_139/U2/CO (FADDX1_LVT)
+                                                          0.08       4.49 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U88/Y (OR2X1_LVT)
+                                                          0.04       4.53 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U89/Y (AND2X1_LVT)
+                                                          0.04       4.56 f
+  u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[15]/D (DFFARX1_LVT)
+                                                          0.01       4.58 f
+  data arrival time                                                  4.58
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[15]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_23     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U964/Y (AND2X1_LVT)                             0.53       3.06 f
+  u_array/gen_row[5].gen_col[0].pe_inst/a_in[1] (systolic_pe_23)
+                                                          0.00       3.06 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U52/Y (NAND2X0_LVT)
+                                                          0.37       3.43 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.12       3.55 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.62 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U101/CO (FADDX1_LVT)
+                                                          0.09       3.71 f
+  u_array/gen_row[5].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.74 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U68/Y (AO222X1_LVT)
+                                                          0.07       3.82 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_143/U2/CO (FADDX1_LVT)
+                                                          0.10       3.91 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U133/Y (AO222X1_LVT)
+                                                          0.08       3.99 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_138/U3/CO (FADDX1_LVT)
+                                                          0.09       4.08 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_138/U2/CO (FADDX1_LVT)
+                                                          0.09       4.16 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U158/Y (AO222X1_LVT)
+                                                          0.08       4.24 r
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_137/U2/CO (FADDX1_LVT)
+                                                          0.10       4.34 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U46/Y (OAI222X1_LVT)
+                                                          0.07       4.41 f
+  u_array/gen_row[5].gen_col[0].pe_inst/intadd_139/U2/S (FADDX1_LVT)
+                                                          0.11       4.51 r
+  u_array/gen_row[5].gen_col[0].pe_inst/U168/Y (NOR2X0_LVT)
+                                                          0.05       4.56 f
+  u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[13]/D (DFFARX1_LVT)
+                                                          0.01       4.58 f
+  data arrival time                                                  4.58
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[5].gen_col[0].pe_inst/product_pipe_reg[13]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.01       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -4.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_31     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U968/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/a_in[0] (systolic_pe_31)
+                                                          0.00       3.06 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U45/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U54/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U58/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U93/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U31/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U60/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_199/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U126/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_194/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U151/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[4].gen_col[0].pe_inst/intadd_193/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[4].gen_col[0].pe_inst/U158/S (FADDX1_LVT)
+                                                          0.12       4.52 f
+  u_array/gen_row[4].gen_col[0].pe_inst/U159/Y (AND2X1_LVT)
+                                                          0.04       4.56 f
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[12]/D (DFFARX1_LVT)
+                                                          0.01       4.57 f
+  data arrival time                                                  4.57
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[4].gen_col[0].pe_inst/product_pipe_reg[12]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_39     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U972/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/a_in[0] (systolic_pe_39)
+                                                          0.00       3.06 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U53/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U61/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U99/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U67/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U38/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_255/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U159/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_250/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U180/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[3].gen_col[0].pe_inst/intadd_249/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[3].gen_col[0].pe_inst/U119/S (FADDX1_LVT)
+                                                          0.12       4.52 f
+  u_array/gen_row[3].gen_col[0].pe_inst/U120/Y (AND2X1_LVT)
+                                                          0.04       4.56 f
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[12]/D (DFFARX1_LVT)
+                                                          0.01       4.57 f
+  data arrival time                                                  4.57
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[3].gen_col[0].pe_inst/product_pipe_reg[12]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+  Startpoint: u_array/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32lvt_tt1p05v25c
+  systolic_array_8x8_COMPUTE_CYCLES23
+                     140000                saed32lvt_tt1p05v25c
+  systolic_pe_47     8000                  saed32lvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_array/state_reg[2]/CLK (DFFARX1_LVT)                  0.00 #     0.00 r
+  u_array/state_reg[2]/QN (DFFARX1_LVT)                   0.07       0.07 f
+  u_array/U224/Y (AND3X1_LVT)                             0.21       0.28 f
+  u_array/U109/Y (INVX1_LVT)                              0.69       0.97 r
+  u_array/U61/Y (INVX1_LVT)                               0.34       1.31 f
+  u_array/U842/Y (AND2X1_LVT)                             0.33       1.64 f
+  u_array/U889/Y (INVX1_LVT)                              0.68       2.31 r
+  u_array/U45/Y (INVX0_LVT)                               0.21       2.52 f
+  u_array/U913/Y (AND2X1_LVT)                             0.54       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/a_in[0] (systolic_pe_47)
+                                                          0.00       3.06 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U50/Y (NAND2X0_LVT)
+                                                          0.44       3.50 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U58/S (FADDX1_LVT)
+                                                          0.11       3.61 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U62/Y (AO222X1_LVT)
+                                                          0.07       3.68 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U203/CO (FADDX1_LVT)
+                                                          0.09       3.77 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U64/Y (INVX1_LVT)
+                                                          0.03       3.80 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U65/Y (AO222X1_LVT)
+                                                          0.07       3.88 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_311/U2/CO (FADDX1_LVT)
+                                                          0.10       3.97 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U260/Y (AO222X1_LVT)
+                                                          0.08       4.05 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U3/CO (FADDX1_LVT)
+                                                          0.09       4.14 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_306/U2/CO (FADDX1_LVT)
+                                                          0.09       4.22 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U280/Y (AO222X1_LVT)
+                                                          0.08       4.30 r
+  u_array/gen_row[2].gen_col[0].pe_inst/intadd_305/U2/CO (FADDX1_LVT)
+                                                          0.10       4.40 r
+  u_array/gen_row[2].gen_col[0].pe_inst/U234/S (FADDX1_LVT)
+                                                          0.12       4.52 f
+  u_array/gen_row[2].gen_col[0].pe_inst/U235/Y (AND2X1_LVT)
+                                                          0.04       4.56 f
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[12]/D (DFFARX1_LVT)
+                                                          0.01       4.57 f
+  data arrival time                                                  4.57
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  u_array/gen_row[2].gen_col[0].pe_inst/product_pipe_reg[12]/CLK (DFFARX1_LVT)
+                                                          0.00       4.90 r
+  library setup time                                     -0.02       4.88
+  data required time                                                 4.88
+  --------------------------------------------------------------------------
+  data required time                                                 4.88
+  data arrival time                                                 -4.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+1

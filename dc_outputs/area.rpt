@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Sat May 30 15:27:30 2026
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_tt1p05v25c (File: /data/pdk/pdk32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt1p05v25c.db)
+
+Number of ports:                         5543
+Number of nets:                         47416
+Number of cells:                        37521
+Number of combinational cells:          30198
+Number of sequential cells:              7256
+Number of macros/black boxes:               0
+Number of buf/inv:                       3398
+Number of references:                       3
+
+Combinational area:              79322.916662
+Buf/Inv area:                     4556.801963
+Noncombinational area:           51633.929089
+Macro/Black Box area:                0.000000
+Net Interconnect area:           59561.988986
+
+Total cell area:                130956.845751
+Total area:                     190518.834737
+1
