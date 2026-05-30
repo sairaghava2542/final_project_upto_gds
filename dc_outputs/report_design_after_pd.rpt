@@ -1,0 +1,75 @@
+****************************************
+Report : design
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Sat May 30 18:49:36 2026
+****************************************
+
+Total number of std cells in library : 863
+Total number of dont_use lib cells   : 26
+Total number of dont_touch lib cells : 26
+Total number of buffers              : 33
+Total number of inverters            : 45
+Total number of flip-flops           : 318
+Total number of latches              : 36
+Total number of ICGs                 : 36
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS    39991   139362.404
+unit                39991   139362.404
+Standard cells      39991   139362.404
+unit                39991   139362.404
+Hard macro cells        0        0.000
+unit                39991   139362.404
+Soft macro cells        0        0.000
+unit                39991   139362.404
+Always on cells         0        0.000
+unit                39991   139362.404
+Physical only           0        0.000
+unit                39991   139362.404
+Fixed cells             0        0.000
+unit                39991   139362.404
+Moveable cells      39991   139362.404
+unit                39991   139362.404
+Placed cells        39811   138646.988
+unit                39991   139362.404
+Sequential           7256    51633.928
+unit                39991   139362.404
+Buffer/inverter      5734    11923.420
+unit                39991   139362.404
+ICG cells               0        0.000
+unit                39991   139362.404
+
+Logic Hierarchies                    : 66
+Design Masters count                 : 111
+Total Flat nets count                : 44822
+Total FloatingNets count             : 22
+Total no of Ports                    : 107
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 7 (1 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : func
+List of Corners                      : nom
+List of Scenarios                    : func::nom
+
+Core Area                            : 217894.679
+Chip Area                            : 256838.039
+Total Site Row Area                  : 217894.679
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 71 (61 of them have unknown routing dir.)
+
+Total wire length                    : 1072536.11 micron
+Total number of wires                : 436917
+Total number of contacts             : 399836
+1
