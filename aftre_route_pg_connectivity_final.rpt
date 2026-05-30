@@ -1,0 +1,38 @@
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 39991
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 192
+Number of VDD Vias: 10532
+Number of VDD Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 16
+  Number of floating vias: 0
+  Number of floating std cells: 4523
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 190
+Number of VSS Vias: 9921
+Number of VSS Terminals: 0
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 15
+  Number of floating vias: 0
+  Number of floating std cells: 4340
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 1 seconds.
+{PATH_11_2 PATH_11_11 PATH_11_20 PATH_11_29 PATH_11_38 PATH_11_47 PATH_11_56 PATH_11_65 PATH_11_74 PATH_11_83 PATH_11_92 PATH_11_101 PATH_11_110 PATH_11_119 PATH_11_128 PATH_11_137 PATH_11_146 PATH_11_155 PATH_11_164 PATH_11_173 PATH_11_182 PATH_11_191 PATH_11_200 PATH_11_209 PATH_11_218 PATH_11_227 PATH_11_236 PATH_11_245 PATH_11_254 PATH_11_263 PATH_11_272}

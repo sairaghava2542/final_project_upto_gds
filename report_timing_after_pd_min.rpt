@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Sat May 30 18:51:09 2026
+****************************************
+
+  Startpoint: u_array/state_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_done_prev_reg (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.11      0.11
+
+  u_array/state_reg[0]/CLK (DFFARX1_HVT)           0.00      0.11 r
+  u_array/state_reg[0]/QN (DFFARX1_HVT)            0.09      0.20 f
+  u_array/U840/Y (AND3X2_HVT)                      0.09      0.29 f
+  u_regs/arr_done_prev_reg/D (DFFARX1_HVT)         0.00      0.29 f
+  data arrival time                                          0.29
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+  u_regs/arr_done_prev_reg/CLK (DFFARX1_HVT)       0.00      0.23 r
+  clock uncertainty                                0.05      0.28
+  library hold time                               -0.01      0.27
+  data required time                                         0.27
+  ------------------------------------------------------------------------
+  data required time                                         0.27
+  data arrival time                                         -0.29
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+1

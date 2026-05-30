@@ -1,0 +1,2 @@
+Warning: Attribute 'technology_node' does not exist on design accel_top (ATTR-3)
+Error: DRC runset not found. (IND-018)

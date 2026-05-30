@@ -1,0 +1,2762 @@
+****************************************
+Report : constraint
+        -all_violators
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Sat May 30 18:56:42 2026
+****************************************
+
+   late_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   Mode: func Corner: nom
+   Scenario: func::nom
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   u_regs/n5205_CDR1            0.15           0.17          -0.02  (VIOLATED) 
+     PIN : u_regs/U5008/Y       0.15           0.17          -0.02  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_203/A
+                                0.15           0.17          -0.02  (VIOLATED) 
+
+   u_regs/n1005_CDR1            0.15           0.15          -0.00  (VIOLATED) 
+     PIN : u_regs/U4017/Y       0.15           0.15          -0.00  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_66/A
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 2
+
+   Mode: func Corner: nom
+   Scenario: func::nom
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   u_regs/n5706                32.00          37.08          -5.08  (VIOLATED) 
+     PIN : u_regs/U319/Y       32.00          37.08          -5.08  (VIOLATED) 
+
+   u_regs/HFSNET_1315          32.00          36.68          -4.68  (VIOLATED) 
+     PIN : u_regs/HFSBUF_170_1612/Y
+                               32.00          36.68          -4.68  (VIOLATED) 
+
+   u_regs/HFSNET_1648          64.00          68.56          -4.56  (VIOLATED) 
+     PIN : u_regs/HFSBUF_1531_3679/Y
+                               64.00          68.56          -4.56  (VIOLATED) 
+
+   u_regs/HFSNET_1349          32.00          36.48          -4.48  (VIOLATED) 
+     PIN : u_regs/HFSBUF_197_1646/Y
+                               32.00          36.48          -4.48  (VIOLATED) 
+
+   u_regs/HFSNET_1183          32.00          36.32          -4.32  (VIOLATED) 
+     PIN : u_regs/HFSBUF_145_1478/Y
+                               32.00          36.32          -4.32  (VIOLATED) 
+
+   u_regs/HFSNET_1188          32.00          36.27          -4.27  (VIOLATED) 
+     PIN : u_regs/HFSBUF_210_1484/Y
+                               32.00          36.27          -4.27  (VIOLATED) 
+
+   u_regs/HFSNET_1180          32.00          36.02          -4.02  (VIOLATED) 
+     PIN : u_regs/HFSBUF_162_1475/Y
+                               32.00          36.02          -4.02  (VIOLATED) 
+
+   u_regs/n1973                 8.00          11.86          -3.86  (VIOLATED) 
+     PIN : u_regs/U3334/Y       8.00          11.86          -3.86  (VIOLATED) 
+
+   u_regs/HFSNET_1262          64.00          67.82          -3.82  (VIOLATED) 
+     PIN : u_regs/HFSBUF_298_1558/Y
+                               64.00          67.82          -3.82  (VIOLATED) 
+
+   u_regs/HFSNET_1313          32.00          35.70          -3.70  (VIOLATED) 
+     PIN : u_regs/HFSBUF_109_1610/Y
+                               32.00          35.70          -3.70  (VIOLATED) 
+
+   u_regs/n5376_CDR1           16.00          19.33          -3.33  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6338/Y
+                               16.00          19.33          -3.33  (VIOLATED) 
+
+   u_regs/HFSNET_1640          64.00          67.29          -3.29  (VIOLATED) 
+     PIN : u_regs/HFSINV_12129_3671/Y
+                               64.00          67.29          -3.29  (VIOLATED) 
+
+   arr_act_data[53]            16.00          19.24          -3.24  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_617/Y
+                               16.00          19.24          -3.24  (VIOLATED) 
+
+   u_regs/HFSNET_1280          32.00          35.22          -3.22  (VIOLATED) 
+     PIN : u_regs/HFSBUF_189_1576/Y
+                               32.00          35.22          -3.22  (VIOLATED) 
+
+   u_regs/HFSNET_1352          32.00          35.16          -3.16  (VIOLATED) 
+     PIN : u_regs/HFSBUF_159_1649/Y
+                               32.00          35.16          -3.16  (VIOLATED) 
+
+   u_regs/HFSNET_1209          64.00          67.16          -3.16  (VIOLATED) 
+     PIN : u_regs/HFSBUF_253_1505/Y
+                               64.00          67.16          -3.16  (VIOLATED) 
+
+   u_regs/n1845                16.00          19.11          -3.11  (VIOLATED) 
+     PIN : u_regs/U3320/Y      16.00          19.11          -3.11  (VIOLATED) 
+
+   u_regs/n5661                32.00          35.06          -3.06  (VIOLATED) 
+     PIN : u_regs/U513/Y       32.00          35.06          -3.06  (VIOLATED) 
+
+   u_regs/HFSNET_1125          32.00          35.05          -3.05  (VIOLATED) 
+     PIN : u_regs/HFSBUF_130_1419/Y
+                               32.00          35.05          -3.05  (VIOLATED) 
+
+   arr_act_data[26]            32.00          35.04          -3.04  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_596/Y
+                               32.00          35.04          -3.04  (VIOLATED) 
+
+   u_regs/HFSNET_1284          32.00          35.02          -3.02  (VIOLATED) 
+     PIN : u_regs/HFSBUF_174_1581/Y
+                               32.00          35.02          -3.02  (VIOLATED) 
+
+   u_regs/HFSNET_1336          64.00          67.02          -3.02  (VIOLATED) 
+     PIN : u_regs/HFSBUF_214_1633/Y
+                               64.00          67.02          -3.02  (VIOLATED) 
+
+   u_regs/HFSNET_1135          32.00          34.98          -2.98  (VIOLATED) 
+     PIN : u_regs/HFSBUF_118_1429/Y
+                               32.00          34.98          -2.98  (VIOLATED) 
+
+   u_regs/HFSNET_1865          82.00          84.96          -2.96  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2331_4022/Y
+                               82.00          84.96          -2.96  (VIOLATED) 
+
+   u_array/HFSNET_193          64.00          66.82          -2.82  (VIOLATED) 
+     PIN : u_array/HFSBUF_9659_3797/Y
+                               64.00          66.82          -2.82  (VIOLATED) 
+
+   u_regs/HFSNET_903           16.00          18.80          -2.80  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_1167/Y
+                               16.00          18.80          -2.80  (VIOLATED) 
+
+   u_regs/n1994                 8.00          10.77          -2.77  (VIOLATED) 
+     PIN : u_regs/U1589/Y       8.00          10.77          -2.77  (VIOLATED) 
+
+   u_regs/HFSNET_1316          32.00          34.75          -2.75  (VIOLATED) 
+     PIN : u_regs/HFSBUF_76_1613/Y
+                               32.00          34.75          -2.75  (VIOLATED) 
+
+   u_regs/HFSNET_1629          64.00          66.74          -2.74  (VIOLATED) 
+     PIN : u_regs/HFSBUF_412_3659/Y
+                               64.00          66.74          -2.74  (VIOLATED) 
+
+   u_regs/n5585                32.00          34.73          -2.73  (VIOLATED) 
+     PIN : u_regs/U550/Y       32.00          34.73          -2.73  (VIOLATED) 
+
+   u_regs/HFSNET_172           16.00          18.73          -2.73  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_212/Y
+                               16.00          18.73          -2.73  (VIOLATED) 
+
+   u_regs/HFSNET_1177          32.00          34.72          -2.72  (VIOLATED) 
+     PIN : u_regs/HFSBUF_116_1472/Y
+                               32.00          34.72          -2.72  (VIOLATED) 
+
+   u_regs/HFSNET_1220          32.00          34.71          -2.71  (VIOLATED) 
+     PIN : u_regs/HFSBUF_133_1516/Y
+                               32.00          34.71          -2.71  (VIOLATED) 
+
+   u_regs/n4943_CDR1           16.00          18.68          -2.68  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6308/Y
+                               16.00          18.68          -2.68  (VIOLATED) 
+
+   rdata[14]                   16.00          18.60          -2.60  (VIOLATED) 
+     PIN : ZBUF_4_inst_15053/Y
+                               16.00          18.60          -2.60  (VIOLATED) 
+
+   u_regs/HFSNET_1603          32.00          34.56          -2.56  (VIOLATED) 
+     PIN : u_regs/HFSBUF_1244_3559/Y
+                               32.00          34.56          -2.56  (VIOLATED) 
+
+   u_regs/HFSNET_658           16.00          18.56          -2.56  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_756/Y
+                               16.00          18.56          -2.56  (VIOLATED) 
+
+   u_regs/ZBUF_32_3            64.00          66.56          -2.56  (VIOLATED) 
+     PIN : u_regs/ZBUF_32_inst_4551/Y
+                               64.00          66.56          -2.56  (VIOLATED) 
+
+   u_regs/copt_gre_net_5418    64.00          66.51          -2.51  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15169/Y
+                               64.00          66.51          -2.51  (VIOLATED) 
+
+   u_regs/n864                 32.00          34.50          -2.50  (VIOLATED) 
+     PIN : u_regs/U612/Y       32.00          34.50          -2.50  (VIOLATED) 
+
+   u_regs/HFSNET_1305          32.00          34.50          -2.50  (VIOLATED) 
+     PIN : u_regs/HFSBUF_146_1602/Y
+                               32.00          34.50          -2.50  (VIOLATED) 
+
+   arr_act_data[34]            16.00          18.49          -2.49  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_604/Y
+                               16.00          18.49          -2.49  (VIOLATED) 
+
+   u_regs/HFSNET_1346          32.00          34.49          -2.49  (VIOLATED) 
+     PIN : u_regs/HFSBUF_175_1643/Y
+                               32.00          34.49          -2.49  (VIOLATED) 
+
+   u_regs/HFSNET_1182          32.00          34.46          -2.46  (VIOLATED) 
+     PIN : u_regs/HFSBUF_134_1477/Y
+                               32.00          34.46          -2.46  (VIOLATED) 
+
+   u_regs/HFSNET_1095          16.00          18.44          -2.44  (VIOLATED) 
+     PIN : u_regs/HFSBUF_133_1388/Y
+                               16.00          18.44          -2.44  (VIOLATED) 
+
+   u_regs/HFSNET_1204          32.00          34.41          -2.41  (VIOLATED) 
+     PIN : u_regs/HFSBUF_74_1500/Y
+                               32.00          34.41          -2.41  (VIOLATED) 
+
+   u_array/ZCTSNET_505         64.00          66.39          -2.39  (VIOLATED) 
+     PIN : u_array/ZCTSINV_45685_4738/Y
+                               64.00          66.39          -2.39  (VIOLATED) 
+
+   u_array/n664                 8.00          10.38          -2.38  (VIOLATED) 
+     PIN : u_array/U1002/Y      8.00          10.38          -2.38  (VIOLATED) 
+
+   u_regs/n5635                32.00          34.36          -2.36  (VIOLATED) 
+     PIN : u_regs/U649/Y       32.00          34.36          -2.36  (VIOLATED) 
+
+   u_regs/n5645                32.00          34.35          -2.35  (VIOLATED) 
+     PIN : u_regs/U838/Y       32.00          34.35          -2.35  (VIOLATED) 
+
+   u_regs/n5552                32.00          34.31          -2.31  (VIOLATED) 
+     PIN : u_regs/U3957/Y      32.00          34.31          -2.31  (VIOLATED) 
+
+   u_regs/HFSNET_1166          32.00          34.30          -2.30  (VIOLATED) 
+     PIN : u_regs/HFSBUF_87_1461/Y
+                               32.00          34.30          -2.30  (VIOLATED) 
+
+   u_regs/n539                 32.00          34.27          -2.27  (VIOLATED) 
+     PIN : u_regs/U1400/Y      32.00          34.27          -2.27  (VIOLATED) 
+
+   rdata[16]                   16.00          18.26          -2.26  (VIOLATED) 
+     PIN : ZBUF_4_inst_15071/Y
+                               16.00          18.26          -2.26  (VIOLATED) 
+
+   u_array/HFSNET_349          32.00          34.26          -2.26  (VIOLATED) 
+     PIN : u_array/HFSINV_42551_4271/Y
+                               32.00          34.26          -2.26  (VIOLATED) 
+
+   u_regs/HFSNET_1563          64.00          66.25          -2.25  (VIOLATED) 
+     PIN : u_regs/HFSBUF_1146_3515/Y
+                               64.00          66.25          -2.25  (VIOLATED) 
+
+   u_regs/n799                 16.00          18.19          -2.19  (VIOLATED) 
+     PIN : u_regs/U936/Y       16.00          18.19          -2.19  (VIOLATED) 
+
+   arr_act_data[33]            16.00          18.14          -2.14  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_603/Y
+                               16.00          18.14          -2.14  (VIOLATED) 
+
+   u_regs/HFSNET_1350          32.00          34.12          -2.12  (VIOLATED) 
+     PIN : u_regs/HFSBUF_120_1647/Y
+                               32.00          34.12          -2.12  (VIOLATED) 
+
+   u_regs/n5636                32.00          34.07          -2.07  (VIOLATED) 
+     PIN : u_regs/U1735/Y      32.00          34.07          -2.07  (VIOLATED) 
+
+   arr_result_data[151]        16.00          18.06          -2.06  (VIOLATED) 
+     PIN : u_array/U646/Y      16.00          18.06          -2.06  (VIOLATED) 
+
+   u_regs/n379                 16.00          18.03          -2.03  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8169/Y
+                               16.00          18.03          -2.03  (VIOLATED) 
+
+   u_array/wgt_wire[4][3][5]
+                               16.00          18.02          -2.02  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[3].pe_inst/HFSBUF_268_1827/Y
+                               16.00          18.02          -2.02  (VIOLATED) 
+
+   u_regs/HFSNET_1738          32.00          34.00          -2.00  (VIOLATED) 
+     PIN : u_regs/HFSBUF_13911_3852/Y
+                               32.00          34.00          -2.00  (VIOLATED) 
+
+   u_regs/HFSNET_1289          32.00          34.00          -2.00  (VIOLATED) 
+     PIN : u_regs/HFSBUF_81_1586/Y
+                               32.00          34.00          -2.00  (VIOLATED) 
+
+   u_regs/HFSNET_446           16.00          17.98          -1.98  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_524/Y
+                               16.00          17.98          -1.98  (VIOLATED) 
+
+   u_regs/n194                 16.00          17.95          -1.95  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8104/Y
+                               16.00          17.95          -1.95  (VIOLATED) 
+
+   u_regs/n1175_CDR1            8.00           9.94          -1.94  (VIOLATED) 
+     PIN : u_regs/U4182/Y       8.00           9.94          -1.94  (VIOLATED) 
+
+   u_regs/HFSNET_1768          32.00          33.92          -1.92  (VIOLATED) 
+     PIN : u_regs/HFSBUF_14400_3883/Y
+                               32.00          33.92          -1.92  (VIOLATED) 
+
+   u_array/wgt_wire[2][4][6]
+                               16.00          17.91          -1.91  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[4].pe_inst/HFSBUF_285_1764/Y
+                               16.00          17.91          -1.91  (VIOLATED) 
+
+   u_array/wgt_wire[6][2][1]
+                               32.00          33.90          -1.90  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_520_2645/Y
+                               32.00          33.90          -1.90  (VIOLATED) 
+
+   u_regs/copt_gre_net_5423    16.00          17.89          -1.89  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15174/Y
+                               16.00          17.89          -1.89  (VIOLATED) 
+
+   u_regs/HFSNET_1341          32.00          33.87          -1.87  (VIOLATED) 
+     PIN : u_regs/HFSBUF_104_1638/Y
+                               32.00          33.87          -1.87  (VIOLATED) 
+
+   u_regs/HFSNET_1191          32.00          33.84          -1.84  (VIOLATED) 
+     PIN : u_regs/HFSBUF_122_1487/Y
+                               32.00          33.84          -1.84  (VIOLATED) 
+
+   arr_act_data[54]            16.00          17.82          -1.82  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_618/Y
+                               16.00          17.82          -1.82  (VIOLATED) 
+
+   u_regs/HFSNET_1724          32.00          33.81          -1.81  (VIOLATED) 
+     PIN : u_regs/HFSBUF_4644_3838/Y
+                               32.00          33.81          -1.81  (VIOLATED) 
+
+   u_regs/HFSNET_1080          16.00          17.80          -1.80  (VIOLATED) 
+     PIN : u_regs/HFSBUF_51_1344/Y
+                               16.00          17.80          -1.80  (VIOLATED) 
+
+   u_regs/HFSNET_850           16.00          17.79          -1.79  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_948/Y
+                               16.00          17.79          -1.79  (VIOLATED) 
+
+   u_regs/HFSNET_1230          16.00          17.79          -1.79  (VIOLATED) 
+     PIN : u_regs/HFSBUF_215_1526/Y
+                               16.00          17.79          -1.79  (VIOLATED) 
+
+   u_array/wgt_wire[4][3][4]
+                               16.00          17.75          -1.75  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[3].pe_inst/HFSBUF_309_1826/Y
+                               16.00          17.75          -1.75  (VIOLATED) 
+
+   u_regs/HFSNET_1354          32.00          33.73          -1.73  (VIOLATED) 
+     PIN : u_regs/HFSBUF_87_1651/Y
+                               32.00          33.73          -1.73  (VIOLATED) 
+
+   u_regs/HFSNET_991           16.00          17.72          -1.72  (VIOLATED) 
+     PIN : u_regs/HFSBUF_55_1255/Y
+                               16.00          17.72          -1.72  (VIOLATED) 
+
+   arr_act_data[31]            16.00          17.71          -1.71  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_601/Y
+                               16.00          17.71          -1.71  (VIOLATED) 
+
+   u_regs/n1785                 8.00           9.71          -1.71  (VIOLATED) 
+     PIN : u_regs/U2658/Y       8.00           9.71          -1.71  (VIOLATED) 
+
+   arr_act_data[30]            16.00          17.70          -1.70  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_600/Y
+                               16.00          17.70          -1.70  (VIOLATED) 
+
+   arr_act_data[48]            16.00          17.70          -1.70  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_612/Y
+                               16.00          17.70          -1.70  (VIOLATED) 
+
+   u_regs/n5651                32.00          33.69          -1.69  (VIOLATED) 
+     PIN : u_regs/U829/Y       32.00          33.69          -1.69  (VIOLATED) 
+
+   u_regs/HFSNET_1142          32.00          33.69          -1.69  (VIOLATED) 
+     PIN : u_regs/HFSBUF_103_1436/Y
+                               32.00          33.69          -1.69  (VIOLATED) 
+
+   u_regs/a_buf[23][5]          8.00           9.68          -1.68  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[23][5]/Q
+                                8.00           9.68          -1.68  (VIOLATED) 
+
+   u_array/wgt_wire[2][6][3]
+                               16.00          17.68          -1.68  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[6].pe_inst/HFSBUF_272_1771/Y
+                               16.00          17.68          -1.68  (VIOLATED) 
+
+   u_regs/HFSNET_1285          32.00          33.67          -1.67  (VIOLATED) 
+     PIN : u_regs/HFSBUF_146_1582/Y
+                               32.00          33.67          -1.67  (VIOLATED) 
+
+   arr_act_data[59]            16.00          17.66          -1.66  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_623/Y
+                               16.00          17.66          -1.66  (VIOLATED) 
+
+   u_array/n566                 8.00           9.64          -1.64  (VIOLATED) 
+     PIN : u_array/U786/Y       8.00           9.64          -1.64  (VIOLATED) 
+
+   u_regs/HFSNET_1070          16.00          17.63          -1.63  (VIOLATED) 
+     PIN : u_regs/HFSBUF_51_1334/Y
+                               16.00          17.63          -1.63  (VIOLATED) 
+
+   u_regs/ZBUF_2_12            16.00          17.57          -1.57  (VIOLATED) 
+     PIN : u_regs/ZBUF_2_inst_4586/Y
+                               16.00          17.57          -1.57  (VIOLATED) 
+
+   u_array/n674                 8.00           9.57          -1.57  (VIOLATED) 
+     PIN : u_array/U1012/Y      8.00           9.57          -1.57  (VIOLATED) 
+
+   u_regs/n279                 16.00          17.57          -1.57  (VIOLATED) 
+     PIN : u_regs/U1065/Y      16.00          17.57          -1.57  (VIOLATED) 
+
+   u_array/wgt_wire[5][7][0]
+                                8.00           9.56          -1.56  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[7].pe_inst/w_out_reg[0]/Q
+                                8.00           9.56          -1.56  (VIOLATED) 
+
+   u_regs/HFSNET_1957          32.00          33.56          -1.56  (VIOLATED) 
+     PIN : u_regs/HFSBUF_22059_4114/Y
+                               32.00          33.56          -1.56  (VIOLATED) 
+
+   arr_act_data[60]            16.00          17.56          -1.56  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_624/Y
+                               16.00          17.56          -1.56  (VIOLATED) 
+
+   u_regs/a_buf[3][5]           8.00           9.55          -1.55  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[3][5]/Q
+                                8.00           9.55          -1.55  (VIOLATED) 
+
+   u_regs/n332                 16.00          17.55          -1.55  (VIOLATED) 
+     PIN : u_regs/U1146/Y      16.00          17.55          -1.55  (VIOLATED) 
+
+   u_regs/n1240_CDR1           16.00          17.55          -1.55  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6581/Y
+                               16.00          17.55          -1.55  (VIOLATED) 
+
+   u_array/wgt_wire[1][1][5]
+                               16.00          17.55          -1.55  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[1].pe_inst/HFSBUF_298_1717/Y
+                               16.00          17.55          -1.55  (VIOLATED) 
+
+   u_regs/n1628                 8.00           9.55          -1.55  (VIOLATED) 
+     PIN : u_regs/U774/Y        8.00           9.55          -1.55  (VIOLATED) 
+
+   u_regs/n4988_CDR1            8.00           9.54          -1.54  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6738/Y
+                                8.00           9.54          -1.54  (VIOLATED) 
+
+   arr_result_data[156]        16.00          17.51          -1.51  (VIOLATED) 
+     PIN : u_array/U651/Y      16.00          17.51          -1.51  (VIOLATED) 
+
+   u_regs/c_buf[32][24]         8.00           9.51          -1.51  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[32][24]/Q
+                                8.00           9.51          -1.51  (VIOLATED) 
+
+   u_regs/n2409                 8.00           9.50          -1.50  (VIOLATED) 
+     PIN : u_regs/U2555/Y       8.00           9.50          -1.50  (VIOLATED) 
+
+   u_regs/n2178                 8.00           9.49          -1.49  (VIOLATED) 
+     PIN : u_regs/U5844/Y       8.00           9.49          -1.49  (VIOLATED) 
+
+   u_regs/ZBUF_32_11           16.00          17.47          -1.47  (VIOLATED) 
+     PIN : u_regs/ZBUF_32_inst_4570/Y
+                               16.00          17.47          -1.47  (VIOLATED) 
+
+   u_array/wgt_wire[5][2][4]
+                               16.00          17.47          -1.47  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[2].pe_inst/HFSBUF_332_1856/Y
+                               16.00          17.47          -1.47  (VIOLATED) 
+
+   u_regs/HFSNET_174           16.00          17.46          -1.46  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_215/Y
+                               16.00          17.46          -1.46  (VIOLATED) 
+
+   u_array/n816                 8.00           9.46          -1.46  (VIOLATED) 
+     PIN : u_array/U1188/Y      8.00           9.46          -1.46  (VIOLATED) 
+
+   u_regs/n255_CDR1             8.00           9.46          -1.46  (VIOLATED) 
+     PIN : u_regs/U1037/Y       8.00           9.46          -1.46  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][30]
+                                8.00           9.44          -1.44  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[30]/Q
+                                8.00           9.44          -1.44  (VIOLATED) 
+
+   u_regs/tmp_net1657           8.00           9.44          -1.44  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_2_8137_roptpi_14311/Y
+                                8.00           9.44          -1.44  (VIOLATED) 
+
+   arr_act_data[56]            16.00          17.43          -1.43  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_620/Y
+                               16.00          17.43          -1.43  (VIOLATED) 
+
+   u_regs/HFSNET_249           16.00          17.42          -1.42  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_327/Y
+                               16.00          17.42          -1.42  (VIOLATED) 
+
+   u_regs/n5534                16.00          17.42          -1.42  (VIOLATED) 
+     PIN : u_regs/U3935/Y      16.00          17.42          -1.42  (VIOLATED) 
+
+   u_regs/HFSNET_113           16.00          17.41          -1.41  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_137/Y
+                               16.00          17.41          -1.41  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][23]
+                                8.00           9.39          -1.39  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[23]/Q
+                                8.00           9.39          -1.39  (VIOLATED) 
+
+   u_regs/n5720                32.00          33.38          -1.38  (VIOLATED) 
+     PIN : u_regs/U318/Y       32.00          33.38          -1.38  (VIOLATED) 
+
+   u_regs/HFSNET_1311          32.00          33.37          -1.37  (VIOLATED) 
+     PIN : u_regs/HFSBUF_86_1608/Y
+                               32.00          33.37          -1.37  (VIOLATED) 
+
+   u_regs/HFSNET_1290          32.00          33.37          -1.37  (VIOLATED) 
+     PIN : u_regs/HFSBUF_93_1587/Y
+                               32.00          33.37          -1.37  (VIOLATED) 
+
+   u_regs/a_buf[10][1]          8.00           9.36          -1.36  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[10][1]/Q
+                                8.00           9.36          -1.36  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][0]
+                                8.00           9.35          -1.35  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[0]/Q
+                                8.00           9.35          -1.35  (VIOLATED) 
+
+   u_regs/c_buf[24][14]         8.00           9.34          -1.34  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[24][14]/Q
+                                8.00           9.34          -1.34  (VIOLATED) 
+
+   u_regs/HFSNET_1731          64.00          65.33          -1.33  (VIOLATED) 
+     PIN : u_regs/HFSBUF_11418_3845/Y
+                               64.00          65.33          -1.33  (VIOLATED) 
+
+   u_regs/HFSNET_953           16.00          17.32          -1.32  (VIOLATED) 
+     PIN : u_regs/HFSBUF_51_1217/Y
+                               16.00          17.32          -1.32  (VIOLATED) 
+
+   u_regs/c_buf[36][28]         8.00           9.31          -1.31  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[36][28]/Q
+                                8.00           9.31          -1.31  (VIOLATED) 
+
+   u_regs/c_buf[32][6]          8.00           9.31          -1.31  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[32][6]/Q
+                                8.00           9.31          -1.31  (VIOLATED) 
+
+   u_regs/n5588                32.00          33.31          -1.31  (VIOLATED) 
+     PIN : u_regs/U570/Y       32.00          33.31          -1.31  (VIOLATED) 
+
+   u_regs/HFSNET_1778          32.00          33.30          -1.30  (VIOLATED) 
+     PIN : u_regs/HFSBUF_7498_3894/Y
+                               32.00          33.30          -1.30  (VIOLATED) 
+
+   u_regs/c_buf[15][1]          8.00           9.30          -1.30  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[15][1]/Q
+                                8.00           9.30          -1.30  (VIOLATED) 
+
+   u_regs/copt_gre_net_5642    16.00          17.29          -1.29  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15377/Y
+                               16.00          17.29          -1.29  (VIOLATED) 
+
+   u_regs/n394                 16.00          17.28          -1.28  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8173/Y
+                               16.00          17.28          -1.28  (VIOLATED) 
+
+   u_regs/n495                 16.00          17.28          -1.28  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8199/Y
+                               16.00          17.28          -1.28  (VIOLATED) 
+
+   arr_act_data[51]            16.00          17.28          -1.28  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_615/Y
+                               16.00          17.28          -1.28  (VIOLATED) 
+
+   u_regs/a_buf[7][3]           8.00           9.27          -1.27  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[7][3]/Q
+                                8.00           9.27          -1.27  (VIOLATED) 
+
+   u_regs/n6318                 8.00           9.27          -1.27  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7289/Y
+                                8.00           9.27          -1.27  (VIOLATED) 
+
+   arr_act_data[22]            16.00          17.27          -1.27  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_592/Y
+                               16.00          17.27          -1.27  (VIOLATED) 
+
+   u_regs/n6289                 8.00           9.27          -1.27  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7263/Y
+                                8.00           9.27          -1.27  (VIOLATED) 
+
+   u_regs/c_buf[49][11]         8.00           9.26          -1.26  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[49][11]/Q
+                                8.00           9.26          -1.26  (VIOLATED) 
+
+   u_regs/c_buf[54][5]          8.00           9.26          -1.26  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[54][5]/Q
+                                8.00           9.26          -1.26  (VIOLATED) 
+
+   u_array/wgt_wire[3][7][6]
+                               16.00          17.26          -1.26  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[7].pe_inst/HFSBUF_233_1812/Y
+                               16.00          17.26          -1.26  (VIOLATED) 
+
+   u_regs/c_buf[41][18]         8.00           9.25          -1.25  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[41][18]/Q
+                                8.00           9.25          -1.25  (VIOLATED) 
+
+   u_regs/HFSNET_949           16.00          17.25          -1.25  (VIOLATED) 
+     PIN : u_regs/HFSBUF_51_1213/Y
+                               16.00          17.25          -1.25  (VIOLATED) 
+
+   u_array/HFSNET_148          32.00          33.25          -1.25  (VIOLATED) 
+     PIN : u_array/HFSBUF_1079_3751/Y
+                               32.00          33.25          -1.25  (VIOLATED) 
+
+   u_regs/n5386_CDR1            8.00           9.24          -1.24  (VIOLATED) 
+     PIN : u_regs/U5212/Y       8.00           9.24          -1.24  (VIOLATED) 
+
+   u_regs/c_buf[41][23]         8.00           9.24          -1.24  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[41][23]/Q
+                                8.00           9.24          -1.24  (VIOLATED) 
+
+   u_array/HFSNET_191          32.00          33.24          -1.24  (VIOLATED) 
+     PIN : u_array/HFSBUF_2430_3795/Y
+                               32.00          33.24          -1.24  (VIOLATED) 
+
+   u_array/HFSNET_130          64.00          65.23          -1.23  (VIOLATED) 
+     PIN : u_array/HFSBUF_2416_3732/Y
+                               64.00          65.23          -1.23  (VIOLATED) 
+
+   u_regs/n5646                32.00          33.23          -1.23  (VIOLATED) 
+     PIN : u_regs/U454/Y       32.00          33.23          -1.23  (VIOLATED) 
+
+   u_regs/n3452                 8.00           9.23          -1.23  (VIOLATED) 
+     PIN : u_regs/U2318/Y       8.00           9.23          -1.23  (VIOLATED) 
+
+   u_array/wgt_wire[2][3][3]
+                               16.00          17.23          -1.23  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[3].pe_inst/HFSBUF_257_1757/Y
+                               16.00          17.23          -1.23  (VIOLATED) 
+
+   u_regs/b_buf[54][6]          8.00           9.23          -1.23  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[54][6]/Q
+                                8.00           9.23          -1.23  (VIOLATED) 
+
+   u_array/n808                 8.00           9.23          -1.23  (VIOLATED) 
+     PIN : u_array/U1178/Y      8.00           9.23          -1.23  (VIOLATED) 
+
+   u_regs/ZBUF_32_10           16.00          17.22          -1.22  (VIOLATED) 
+     PIN : u_regs/ZBUF_32_inst_4563/Y
+                               16.00          17.22          -1.22  (VIOLATED) 
+
+   u_array/wgt_wire[2][0][5]
+                               16.00          17.22          -1.22  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[0].pe_inst/HFSBUF_358_1747/Y
+                               16.00          17.22          -1.22  (VIOLATED) 
+
+   u_array/cycle_cnt[0]         8.00           9.22          -1.22  (VIOLATED) 
+     PIN : u_array/cycle_cnt_reg[0]/Q
+                                8.00           9.22          -1.22  (VIOLATED) 
+
+   u_regs/HFSNET_980           16.00          17.21          -1.21  (VIOLATED) 
+     PIN : u_regs/HFSBUF_66_1244/Y
+                               16.00          17.21          -1.21  (VIOLATED) 
+
+   u_regs/c_buf[43][14]         8.00           9.21          -1.21  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[43][14]/Q
+                                8.00           9.21          -1.21  (VIOLATED) 
+
+   u_regs/copt_gre_net_5420    16.00          17.21          -1.21  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15171/Y
+                               16.00          17.21          -1.21  (VIOLATED) 
+
+   u_regs/n489_CDR1            16.00          17.21          -1.21  (VIOLATED) 
+     PIN : u_regs/U1335/Y      16.00          17.21          -1.21  (VIOLATED) 
+
+   u_regs/n6278                 8.00           9.19          -1.19  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7259/Y
+                                8.00           9.19          -1.19  (VIOLATED) 
+
+   u_regs/c_buf[4][18]          8.00           9.19          -1.19  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[4][18]/Q
+                                8.00           9.19          -1.19  (VIOLATED) 
+
+   u_array/wgt_wire[4][3][3]
+                               16.00          17.18          -1.18  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[3].pe_inst/HFSBUF_249_1825/Y
+                               16.00          17.18          -1.18  (VIOLATED) 
+
+   u_regs/HFSNET_1145          32.00          33.18          -1.18  (VIOLATED) 
+     PIN : u_regs/HFSBUF_139_1439/Y
+                               32.00          33.18          -1.18  (VIOLATED) 
+
+   u_array/n299                 8.00           9.17          -1.17  (VIOLATED) 
+     PIN : u_array/U462/Y       8.00           9.17          -1.17  (VIOLATED) 
+
+   u_regs/n4857_CDR1           32.00          33.17          -1.17  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6304/Y
+                               32.00          33.17          -1.17  (VIOLATED) 
+
+   u_array/act_wire[5][3][3]
+                               16.00          17.16          -1.16  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_341_2312/Y
+                               16.00          17.16          -1.16  (VIOLATED) 
+
+   u_array/act_wire[5][3][0]
+                               16.00          17.16          -1.16  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_392_2495/Y
+                               16.00          17.16          -1.16  (VIOLATED) 
+
+   arr_act_data[32]            16.00          17.15          -1.15  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_602/Y
+                               16.00          17.15          -1.15  (VIOLATED) 
+
+   u_array/n892                 8.00           9.15          -1.15  (VIOLATED) 
+     PIN : u_array/U1278/Y      8.00           9.15          -1.15  (VIOLATED) 
+
+   u_regs/c_buf[23][7]          8.00           9.14          -1.14  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[23][7]/Q
+                                8.00           9.14          -1.14  (VIOLATED) 
+
+   u_regs/HFSNET_1634           8.00           9.14          -1.14  (VIOLATED) 
+     PIN : u_regs/HFSINV_4578_3664/Y
+                                8.00           9.14          -1.14  (VIOLATED) 
+
+   u_array/pe_acc_out[3][6][26]
+                                8.00           9.13          -1.13  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[6].pe_inst/accumulator_reg[26]/Q
+                                8.00           9.13          -1.13  (VIOLATED) 
+
+   u_regs/c_buf[40][31]         8.00           9.13          -1.13  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[40][31]/Q
+                                8.00           9.13          -1.13  (VIOLATED) 
+
+   u_regs/n302                 16.00          17.13          -1.13  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7174/Y
+                               16.00          17.13          -1.13  (VIOLATED) 
+
+   u_regs/a_buf[37][0]          8.00           9.12          -1.12  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[37][0]/Q
+                                8.00           9.12          -1.12  (VIOLATED) 
+
+   u_regs/b_buf[53][6]          8.00           9.12          -1.12  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[53][6]/Q
+                                8.00           9.12          -1.12  (VIOLATED) 
+
+   u_regs/n5571_CDR1           16.00          17.12          -1.12  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6349/Y
+                               16.00          17.12          -1.12  (VIOLATED) 
+
+   u_regs/HFSNET_1292          32.00          33.12          -1.12  (VIOLATED) 
+     PIN : u_regs/HFSBUF_165_1589/Y
+                               32.00          33.12          -1.12  (VIOLATED) 
+
+   u_array/pe_acc_out[6][3][23]
+                                8.00           9.11          -1.11  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[3].pe_inst/accumulator_reg[23]/Q
+                                8.00           9.11          -1.11  (VIOLATED) 
+
+   u_array/wgt_wire[2][4][3]
+                               16.00          17.10          -1.10  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[4].pe_inst/HFSBUF_250_1761/Y
+                               16.00          17.10          -1.10  (VIOLATED) 
+
+   u_regs/n5176_CDR1            8.00           9.10          -1.10  (VIOLATED) 
+     PIN : u_regs/U5006/Y       8.00           9.10          -1.10  (VIOLATED) 
+
+   u_regs/n5043_CDR1            8.00           9.10          -1.10  (VIOLATED) 
+     PIN : u_regs/U4869/Y       8.00           9.10          -1.10  (VIOLATED) 
+
+   u_array/tmp_net977           8.00           9.09          -1.09  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_2_7087/Y
+                                8.00           9.09          -1.09  (VIOLATED) 
+
+   u_regs/a_buf[21][3]          8.00           9.08          -1.08  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[21][3]/Q
+                                8.00           9.08          -1.08  (VIOLATED) 
+
+   u_array/act_wire[1][1][6]
+                               16.00          17.08          -1.08  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[0].pe_inst/HFSBUF_281_1962/Y
+                               16.00          17.08          -1.08  (VIOLATED) 
+
+   u_array/HFSNET_337          64.00          65.07          -1.07  (VIOLATED) 
+     PIN : u_array/HFSBUF_28201_4255/Y
+                               64.00          65.07          -1.07  (VIOLATED) 
+
+   u_regs/HFSNET_1147          32.00          33.07          -1.07  (VIOLATED) 
+     PIN : u_regs/HFSBUF_89_1441/Y
+                               32.00          33.07          -1.07  (VIOLATED) 
+
+   u_regs/n5222_CDR1            8.00           9.06          -1.06  (VIOLATED) 
+     PIN : u_regs/U5047/Y       8.00           9.06          -1.06  (VIOLATED) 
+
+   u_array/n438                 8.00           9.06          -1.06  (VIOLATED) 
+     PIN : u_array/U634/Y       8.00           9.06          -1.06  (VIOLATED) 
+
+   u_regs/c_buf[43][5]          8.00           9.05          -1.05  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[43][5]/Q
+                                8.00           9.05          -1.05  (VIOLATED) 
+
+   u_regs/HFSNET_1413          16.00          17.05          -1.05  (VIOLATED) 
+     PIN : u_regs/HFSINV_322_2785/Y
+                               16.00          17.05          -1.05  (VIOLATED) 
+
+   u_regs/n1455_CDR1            8.00           9.04          -1.04  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6643/Y
+                                8.00           9.04          -1.04  (VIOLATED) 
+
+   u_regs/c_buf[49][23]         8.00           9.03          -1.03  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[49][23]/Q
+                                8.00           9.03          -1.03  (VIOLATED) 
+
+   u_regs/n1494_CDR1            8.00           9.03          -1.03  (VIOLATED) 
+     PIN : u_regs/U4521/Y       8.00           9.03          -1.03  (VIOLATED) 
+
+   rdata[19]                   16.00          17.03          -1.03  (VIOLATED) 
+     PIN : ZBUF_4_inst_15105/Y
+                               16.00          17.03          -1.03  (VIOLATED) 
+
+   u_regs/HFSNET_1583          32.00          33.03          -1.03  (VIOLATED) 
+     PIN : u_regs/HFSBUF_907_3537/Y
+                               32.00          33.03          -1.03  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][21]
+                                8.00           9.03          -1.03  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[21]/Q
+                                8.00           9.03          -1.03  (VIOLATED) 
+
+   u_array/act_wire[5][3][2]
+                               16.00          17.03          -1.03  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_313_2097/Y
+                               16.00          17.03          -1.03  (VIOLATED) 
+
+   u_array/gen_row[7].gen_col[3].pe_inst/HFSNET_14
+                               16.00          17.02          -1.02  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[3].pe_inst/HFSINV_616_3175/Y
+                               16.00          17.02          -1.02  (VIOLATED) 
+
+   u_array/n551                 8.00           9.01          -1.01  (VIOLATED) 
+     PIN : u_array/U765/Y       8.00           9.01          -1.01  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[4].pe_inst/HFSNET_30
+                               32.00          33.01          -1.01  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[4].pe_inst/HFSINV_1489_3636/Y
+                               32.00          33.01          -1.01  (VIOLATED) 
+
+   u_regs/c_buf[13][13]         8.00           9.01          -1.01  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[13][13]/Q
+                                8.00           9.01          -1.01  (VIOLATED) 
+
+   u_regs/c_buf[14][12]         8.00           8.99          -0.99  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[14][12]/Q
+                                8.00           8.99          -0.99  (VIOLATED) 
+
+   u_regs/c_buf[8][26]          8.00           8.99          -0.99  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[8][26]/Q
+                                8.00           8.99          -0.99  (VIOLATED) 
+
+   rdata[13]                   16.00          16.99          -0.99  (VIOLATED) 
+     PIN : ZBUF_4_inst_15077/Y
+                               16.00          16.99          -0.99  (VIOLATED) 
+
+   u_regs/ZBUF_32_115          16.00          16.96          -0.96  (VIOLATED) 
+     PIN : u_regs/ZBUF_32_inst_14871/Y
+                               16.00          16.96          -0.96  (VIOLATED) 
+
+   u_regs/n2248                 8.00           8.96          -0.96  (VIOLATED) 
+     PIN : u_regs/U415/Y        8.00           8.96          -0.96  (VIOLATED) 
+
+   u_regs/n472_CDR1             8.00           8.96          -0.96  (VIOLATED) 
+     PIN : u_regs/U1319/Y       8.00           8.96          -0.96  (VIOLATED) 
+
+   u_regs/HFSNET_1098          32.00          32.96          -0.96  (VIOLATED) 
+     PIN : u_regs/HFSBUF_118_1391/Y
+                               32.00          32.96          -0.96  (VIOLATED) 
+
+   u_array/HFSNET_146          64.00          64.96          -0.96  (VIOLATED) 
+     PIN : u_array/HFSBUF_1584_3749/Y
+                               64.00          64.96          -0.96  (VIOLATED) 
+
+   u_regs/c_buf[13][11]         8.00           8.95          -0.95  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[13][11]/Q
+                                8.00           8.95          -0.95  (VIOLATED) 
+
+   u_regs/copt_gre_net_5442    16.00          16.95          -0.95  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15193/Y
+                               16.00          16.95          -0.95  (VIOLATED) 
+
+   u_regs/a_buf[38][2]          8.00           8.95          -0.95  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[38][2]/Q
+                                8.00           8.95          -0.95  (VIOLATED) 
+
+   u_regs/ZCTSNET_2134         64.00          64.95          -0.95  (VIOLATED) 
+     PIN : u_regs/ZCTSINV_171492_4710/Y
+                               64.00          64.95          -0.95  (VIOLATED) 
+
+   u_regs/n1305_CDR1            8.00           8.94          -0.94  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7483/Y
+                                8.00           8.94          -0.94  (VIOLATED) 
+
+   u_regs/b_buf[22][0]          8.00           8.94          -0.94  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[22][0]/Q
+                                8.00           8.94          -0.94  (VIOLATED) 
+
+   u_regs/b_buf[18][1]          8.00           8.93          -0.93  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[18][1]/Q
+                                8.00           8.93          -0.93  (VIOLATED) 
+
+   u_regs/HFSNET_1173          32.00          32.93          -0.93  (VIOLATED) 
+     PIN : u_regs/HFSBUF_144_1468/Y
+                               32.00          32.93          -0.93  (VIOLATED) 
+
+   u_regs/c_buf[47][31]         8.00           8.93          -0.93  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[47][31]/Q
+                                8.00           8.93          -0.93  (VIOLATED) 
+
+   u_regs/n5008_CDR1            8.00           8.92          -0.92  (VIOLATED) 
+     PIN : u_regs/U4831/Y       8.00           8.92          -0.92  (VIOLATED) 
+
+   u_regs/n5525                 8.00           8.92          -0.92  (VIOLATED) 
+     PIN : u_regs/U3925/Y       8.00           8.92          -0.92  (VIOLATED) 
+
+   u_array/wgt_wire[3][6][6]
+                               16.00          16.92          -0.92  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[6].pe_inst/HFSBUF_280_1808/Y
+                               16.00          16.92          -0.92  (VIOLATED) 
+
+   u_regs/n479_CDR1             8.00           8.92          -0.92  (VIOLATED) 
+     PIN : u_regs/U1323/Y       8.00           8.92          -0.92  (VIOLATED) 
+
+   u_regs/c_buf[53][20]         8.00           8.91          -0.91  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[53][20]/Q
+                                8.00           8.91          -0.91  (VIOLATED) 
+
+   u_regs/a_buf[43][6]          8.00           8.91          -0.91  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[43][6]/Q
+                                8.00           8.91          -0.91  (VIOLATED) 
+
+   u_array/pe_acc_out[6][3][21]
+                                8.00           8.90          -0.90  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[3].pe_inst/accumulator_reg[21]/Q
+                                8.00           8.90          -0.90  (VIOLATED) 
+
+   u_regs/c_buf[52][30]         8.00           8.90          -0.90  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[52][30]/Q
+                                8.00           8.90          -0.90  (VIOLATED) 
+
+   u_regs/ZBUF_47_21           64.00          64.90          -0.90  (VIOLATED) 
+     PIN : u_regs/ZBUF_47_inst_4611/Y
+                               64.00          64.90          -0.90  (VIOLATED) 
+
+   u_array/gen_row[0].gen_col[2].pe_inst/HFSNET_28
+                               16.00          16.89          -0.89  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[2].pe_inst/HFSINV_1087_3380/Y
+                               16.00          16.89          -0.89  (VIOLATED) 
+
+   u_array/tmp_net955           8.00           8.89          -0.89  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7054/Y
+                                8.00           8.89          -0.89  (VIOLATED) 
+
+   u_array/n211_CDR1            8.00           8.88          -0.88  (VIOLATED) 
+     PIN : u_array/U353/Y       8.00           8.88          -0.88  (VIOLATED) 
+
+   u_regs/HFSNET_1198          32.00          32.87          -0.87  (VIOLATED) 
+     PIN : u_regs/HFSBUF_156_1494/Y
+                               32.00          32.87          -0.87  (VIOLATED) 
+
+   u_regs/c_buf[10][3]          8.00           8.87          -0.87  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[10][3]/Q
+                                8.00           8.87          -0.87  (VIOLATED) 
+
+   u_regs/n244                  8.00           8.87          -0.87  (VIOLATED) 
+     PIN : u_regs/U1025/Y       8.00           8.87          -0.87  (VIOLATED) 
+
+   u_regs/b_buf[55][1]          8.00           8.87          -0.87  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[55][1]/Q
+                                8.00           8.87          -0.87  (VIOLATED) 
+
+   u_array/gen_row[4].gen_col[7].pe_inst/HFSNET_22
+                               16.00          16.86          -0.86  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[7].pe_inst/HFSINV_1479_3438/Y
+                               16.00          16.86          -0.86  (VIOLATED) 
+
+   u_regs/HFSNET_79             8.00           8.85          -0.85  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7580/Y
+                                8.00           8.85          -0.85  (VIOLATED) 
+
+   u_regs/n1324_CDR1            8.00           8.85          -0.85  (VIOLATED) 
+     PIN : u_regs/U4343/Y       8.00           8.85          -0.85  (VIOLATED) 
+
+   u_regs/b_buf[13][6]          8.00           8.84          -0.84  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[13][6]/Q
+                                8.00           8.84          -0.84  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][17]
+                                8.00           8.84          -0.84  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[17]/Q
+                                8.00           8.84          -0.84  (VIOLATED) 
+
+   u_regs/n796                 16.00          16.83          -0.83  (VIOLATED) 
+     PIN : u_regs/U858/Y       16.00          16.83          -0.83  (VIOLATED) 
+
+   u_regs/HFSNET_53             8.00           8.83          -0.83  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7569/Y
+                                8.00           8.83          -0.83  (VIOLATED) 
+
+   u_regs/n5616                32.00          32.83          -0.83  (VIOLATED) 
+     PIN : u_regs/U726/Y       32.00          32.83          -0.83  (VIOLATED) 
+
+   u_regs/c_buf[25][6]          8.00           8.83          -0.83  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[25][6]/Q
+                                8.00           8.83          -0.83  (VIOLATED) 
+
+   u_regs/n5538                16.00          16.83          -0.83  (VIOLATED) 
+     PIN : u_regs/U3941/Y      16.00          16.83          -0.83  (VIOLATED) 
+
+   u_regs/HFSNET_1721          32.00          32.83          -0.83  (VIOLATED) 
+     PIN : u_regs/HFSINV_24090_3834/Y
+                               32.00          32.83          -0.83  (VIOLATED) 
+
+   u_regs/copt_gre_net_5428    16.00          16.82          -0.82  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15179/Y
+                               16.00          16.82          -0.82  (VIOLATED) 
+
+   u_regs/HFSNET_663           16.00          16.82          -0.82  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_761/Y
+                               16.00          16.82          -0.82  (VIOLATED) 
+
+   u_array/act_wire[2][5][3]
+                               16.00          16.82          -0.82  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[4].pe_inst/HFSBUF_340_2242/Y
+                               16.00          16.82          -0.82  (VIOLATED) 
+
+   u_regs/n181                 16.00          16.81          -0.81  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7170/Y
+                               16.00          16.81          -0.81  (VIOLATED) 
+
+   u_regs/c_buf[10][7]          8.00           8.81          -0.81  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[10][7]/Q
+                                8.00           8.81          -0.81  (VIOLATED) 
+
+   u_array/n201                 8.00           8.81          -0.81  (VIOLATED) 
+     PIN : u_array/U331/Y       8.00           8.81          -0.81  (VIOLATED) 
+
+   u_regs/HFSNET_1018          16.00          16.80          -0.80  (VIOLATED) 
+     PIN : u_regs/HFSBUF_47_1282/Y
+                               16.00          16.80          -0.80  (VIOLATED) 
+
+   u_regs/HFSNET_627           16.00          16.80          -0.80  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_725/Y
+                               16.00          16.80          -0.80  (VIOLATED) 
+
+   arr_result_data[182]         8.00           8.80          -0.80  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_1_7753/Y
+                                8.00           8.80          -0.80  (VIOLATED) 
+
+   u_array/HFSNET_283          82.00          82.80          -0.80  (VIOLATED) 
+     PIN : u_array/HFSBUF_7086_4187/Y
+                               82.00          82.80          -0.80  (VIOLATED) 
+
+   u_array/pe_compute_en       32.00          32.80          -0.80  (VIOLATED) 
+     PIN : u_array/U224/Y      32.00          32.80          -0.80  (VIOLATED) 
+
+   u_array/n353_CDR1            8.00           8.79          -0.79  (VIOLATED) 
+     PIN : u_array/U533/Y       8.00           8.79          -0.79  (VIOLATED) 
+
+   u_array/pe_acc_out[4][6][2]
+                                8.00           8.79          -0.79  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[6].pe_inst/accumulator_reg[2]/Q
+                                8.00           8.79          -0.79  (VIOLATED) 
+
+   u_regs/a_buf[7][0]           8.00           8.79          -0.79  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[7][0]/Q
+                                8.00           8.79          -0.79  (VIOLATED) 
+
+   u_regs/c_buf[52][29]         8.00           8.78          -0.78  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[52][29]/Q
+                                8.00           8.78          -0.78  (VIOLATED) 
+
+   u_array/wgt_wire[1][0][0]
+                               16.00          16.78          -0.78  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[0].pe_inst/HFSBUF_590_2560/Y
+                               16.00          16.78          -0.78  (VIOLATED) 
+
+   u_regs/c_buf[63][31]         8.00           8.78          -0.78  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[63][31]/Q
+                                8.00           8.78          -0.78  (VIOLATED) 
+
+   u_array/act_wire[1][3][1]
+                               16.00          16.77          -0.77  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[2].pe_inst/HFSBUF_413_2207/Y
+                               16.00          16.77          -0.77  (VIOLATED) 
+
+   u_array/pe_acc_out[7][5][18]
+                                8.00           8.76          -0.76  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[5].pe_inst/accumulator_reg[18]/Q
+                                8.00           8.76          -0.76  (VIOLATED) 
+
+   u_array/wgt_wire[2][3][4]
+                               16.00          16.76          -0.76  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[3].pe_inst/HFSBUF_314_1758/Y
+                               16.00          16.76          -0.76  (VIOLATED) 
+
+   u_regs/n381_CDR1             8.00           8.76          -0.76  (VIOLATED) 
+     PIN : u_regs/U1210/Y       8.00           8.76          -0.76  (VIOLATED) 
+
+   u_regs/n5007                 8.00           8.76          -0.76  (VIOLATED) 
+     PIN : u_regs/U4827/Y       8.00           8.76          -0.76  (VIOLATED) 
+
+   u_regs/HFSNET_1415          16.00          16.75          -0.75  (VIOLATED) 
+     PIN : u_regs/HFSINV_357_2789/Y
+                               16.00          16.75          -0.75  (VIOLATED) 
+
+   u_regs/n2250                 8.00           8.75          -0.75  (VIOLATED) 
+     PIN : u_regs/U698/Y        8.00           8.75          -0.75  (VIOLATED) 
+
+   u_regs/c_buf[44][1]          8.00           8.75          -0.75  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[44][1]/Q
+                                8.00           8.75          -0.75  (VIOLATED) 
+
+   u_array/pe_acc_out[4][0][13]
+                                8.00           8.75          -0.75  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[0].pe_inst/accumulator_reg[13]/Q
+                                8.00           8.75          -0.75  (VIOLATED) 
+
+   u_array/tmp_net1008          8.00           8.74          -0.74  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7134/Y
+                                8.00           8.74          -0.74  (VIOLATED) 
+
+   u_array/n428_CDR1            8.00           8.74          -0.74  (VIOLATED) 
+     PIN : u_array/U618/Y       8.00           8.74          -0.74  (VIOLATED) 
+
+   u_regs/c_buf[2][20]          8.00           8.74          -0.74  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[2][20]/Q
+                                8.00           8.74          -0.74  (VIOLATED) 
+
+   u_regs/n333                  8.00           8.74          -0.74  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8154/Y
+                                8.00           8.74          -0.74  (VIOLATED) 
+
+   arr_act_data[50]            16.00          16.74          -0.74  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_614/Y
+                               16.00          16.74          -0.74  (VIOLATED) 
+
+   u_array/gen_row[3].gen_col[2].pe_inst/HFSNET_23
+                               16.00          16.73          -0.73  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[2].pe_inst/HFSINV_717_3142/Y
+                               16.00          16.73          -0.73  (VIOLATED) 
+
+   u_array/n820                 8.00           8.73          -0.73  (VIOLATED) 
+     PIN : u_array/U1193/Y      8.00           8.73          -0.73  (VIOLATED) 
+
+   u_regs/HFSNET_1695          32.00          32.73          -0.73  (VIOLATED) 
+     PIN : u_regs/HFSINV_1057_3808/Y
+                               32.00          32.73          -0.73  (VIOLATED) 
+
+   u_regs/HFSNET_657           16.00          16.72          -0.72  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_755/Y
+                               16.00          16.72          -0.72  (VIOLATED) 
+
+   u_regs/HFSNET_948           16.00          16.72          -0.72  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_1212/Y
+                               16.00          16.72          -0.72  (VIOLATED) 
+
+   u_regs/n1066_CDR1            8.00           8.72          -0.72  (VIOLATED) 
+     PIN : u_regs/U4079/Y       8.00           8.72          -0.72  (VIOLATED) 
+
+   u_array/act_wire[2][3][7]
+                               16.00          16.72          -0.72  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[2].pe_inst/HFSBUF_425_2436/Y
+                               16.00          16.72          -0.72  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][19]
+                                8.00           8.72          -0.72  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[19]/Q
+                                8.00           8.72          -0.72  (VIOLATED) 
+
+   u_array/pe_acc_out[0][7][20]
+                                8.00           8.72          -0.72  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[7].pe_inst/accumulator_reg[20]/Q
+                                8.00           8.72          -0.72  (VIOLATED) 
+
+   u_regs/c_buf[57][25]         8.00           8.71          -0.71  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[57][25]/Q
+                                8.00           8.71          -0.71  (VIOLATED) 
+
+   u_regs/c_buf[24][31]         8.00           8.71          -0.71  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[24][31]/Q
+                                8.00           8.71          -0.71  (VIOLATED) 
+
+   u_array/wgt_wire[2][6][5]
+                               16.00          16.71          -0.71  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[6].pe_inst/HFSBUF_318_1773/Y
+                               16.00          16.71          -0.71  (VIOLATED) 
+
+   u_regs/n6309                 8.00           8.71          -0.71  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7277/Y
+                                8.00           8.71          -0.71  (VIOLATED) 
+
+   u_regs/HFSNET_1801          32.00          32.71          -0.71  (VIOLATED) 
+     PIN : u_regs/HFSBUF_5496_3917/Y
+                               32.00          32.71          -0.71  (VIOLATED) 
+
+   u_array/gen_row[4].gen_col[1].pe_inst/HFSNET_23
+                               16.00          16.70          -0.70  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[1].pe_inst/HFSINV_881_3149/Y
+                               16.00          16.70          -0.70  (VIOLATED) 
+
+   u_array/wgt_wire[6][2][2]
+                               32.00          32.70          -0.70  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_271_2100/Y
+                               32.00          32.70          -0.70  (VIOLATED) 
+
+   u_regs/c_buf[49][26]         8.00           8.70          -0.70  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[49][26]/Q
+                                8.00           8.70          -0.70  (VIOLATED) 
+
+   u_regs/c_buf[11][8]          8.00           8.70          -0.70  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[11][8]/Q
+                                8.00           8.70          -0.70  (VIOLATED) 
+
+   arr_result_data[133]        16.00          16.70          -0.70  (VIOLATED) 
+     PIN : u_array/U299/Y      16.00          16.70          -0.70  (VIOLATED) 
+
+   u_regs/HFSNET_975           16.00          16.69          -0.69  (VIOLATED) 
+     PIN : u_regs/HFSBUF_47_1239/Y
+                               16.00          16.69          -0.69  (VIOLATED) 
+
+   u_regs/n4570                 8.00           8.69          -0.69  (VIOLATED) 
+     PIN : u_regs/U2894/Y       8.00           8.69          -0.69  (VIOLATED) 
+
+   u_regs/n475                 16.00          16.69          -0.69  (VIOLATED) 
+     PIN : u_regs/U1321/Y      16.00          16.69          -0.69  (VIOLATED) 
+
+   arr_wgt_data[38]            16.00          16.68          -0.68  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_644/Y
+                               16.00          16.68          -0.68  (VIOLATED) 
+
+   u_regs/HFSNET_1037          16.00          16.68          -0.68  (VIOLATED) 
+     PIN : u_regs/HFSBUF_57_1301/Y
+                               16.00          16.68          -0.68  (VIOLATED) 
+
+   u_regs/c_buf[46][14]         8.00           8.68          -0.68  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[46][14]/Q
+                                8.00           8.68          -0.68  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][22]
+                                8.00           8.68          -0.68  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[22]/Q
+                                8.00           8.68          -0.68  (VIOLATED) 
+
+   u_regs/b_buf[54][7]          8.00           8.68          -0.68  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[54][7]/Q
+                                8.00           8.68          -0.68  (VIOLATED) 
+
+   u_array/n937                 8.00           8.67          -0.67  (VIOLATED) 
+     PIN : u_array/U1334/Y      8.00           8.67          -0.67  (VIOLATED) 
+
+   u_array/pe_acc_out[5][5][0]
+                                8.00           8.67          -0.67  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[5].pe_inst/accumulator_reg[0]/Q
+                                8.00           8.67          -0.67  (VIOLATED) 
+
+   u_regs/n6319                 8.00           8.67          -0.67  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7285/Y
+                                8.00           8.67          -0.67  (VIOLATED) 
+
+   u_array/wgt_wire[3][5][0]
+                                8.00           8.66          -0.66  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/w_out_reg[0]/Q
+                                8.00           8.66          -0.66  (VIOLATED) 
+
+   u_regs/n2170                16.00          16.65          -0.65  (VIOLATED) 
+     PIN : u_regs/U5851/Y      16.00          16.65          -0.65  (VIOLATED) 
+
+   u_array/gen_row[5].gen_col[2].pe_inst/HFSNET_22
+                               16.00          16.65          -0.65  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_551_2629/Y
+                               16.00          16.65          -0.65  (VIOLATED) 
+
+   u_array/pe_acc_out[0][0][13]
+                                8.00           8.65          -0.65  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[0].pe_inst/accumulator_reg[13]/Q
+                                8.00           8.65          -0.65  (VIOLATED) 
+
+   u_regs/n1238_CDR1            8.00           8.65          -0.65  (VIOLATED) 
+     PIN : u_regs/U4255/Y       8.00           8.65          -0.65  (VIOLATED) 
+
+   u_array/gre_a_BUF_1116_178
+                               16.00          16.65          -0.65  (VIOLATED) 
+     PIN : u_array/gre_a_BUF_1116_inst_15354/Y
+                               16.00          16.65          -0.65  (VIOLATED) 
+
+   u_regs/HFSNET_151           16.00          16.65          -0.65  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_185/Y
+                               16.00          16.65          -0.65  (VIOLATED) 
+
+   u_array/wgt_wire[1][4][3]
+                               16.00          16.65          -0.65  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[4].pe_inst/HFSBUF_221_1727/Y
+                               16.00          16.65          -0.65  (VIOLATED) 
+
+   u_regs/a_buf[4][3]           8.00           8.64          -0.64  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[4][3]/Q
+                                8.00           8.64          -0.64  (VIOLATED) 
+
+   u_regs/n677                 16.00          16.63          -0.63  (VIOLATED) 
+     PIN : u_regs/U525/Y       16.00          16.63          -0.63  (VIOLATED) 
+
+   u_regs/c_buf[14][0]          8.00           8.63          -0.63  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[14][0]/Q
+                                8.00           8.63          -0.63  (VIOLATED) 
+
+   u_regs/n341_CDR1             8.00           8.63          -0.63  (VIOLATED) 
+     PIN : u_regs/U1162/Y       8.00           8.63          -0.63  (VIOLATED) 
+
+   u_regs/HFSNET_1332          32.00          32.62          -0.62  (VIOLATED) 
+     PIN : u_regs/HFSBUF_250_1629/Y
+                               32.00          32.62          -0.62  (VIOLATED) 
+
+   arr_wgt_data[62]             8.00           8.62          -0.62  (VIOLATED) 
+     PIN : u_regs/arr_wgt_data_reg[62]/Q
+                                8.00           8.62          -0.62  (VIOLATED) 
+
+   u_array/HFSNET_135          32.00          32.62          -0.62  (VIOLATED) 
+     PIN : u_array/HFSBUF_730_3738/Y
+                               32.00          32.62          -0.62  (VIOLATED) 
+
+   u_regs/ZBUF_23_84           16.00          16.62          -0.62  (VIOLATED) 
+     PIN : u_regs/ZBUF_23_inst_14791/Y
+                               16.00          16.62          -0.62  (VIOLATED) 
+
+   u_array/gen_row[3].gen_col[2].pe_inst/HFSNET_28
+                               32.00          32.62          -0.62  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[2].pe_inst/HFSINV_1399_3610/Y
+                               32.00          32.62          -0.62  (VIOLATED) 
+
+   u_regs/HFSNET_1307          32.00          32.61          -0.61  (VIOLATED) 
+     PIN : u_regs/HFSBUF_77_1604/Y
+                               32.00          32.61          -0.61  (VIOLATED) 
+
+   u_regs/c_buf[6][20]          8.00           8.61          -0.61  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[6][20]/Q
+                                8.00           8.61          -0.61  (VIOLATED) 
+
+   u_array/wgt_wire[2][2][3]
+                               16.00          16.60          -0.60  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[2].pe_inst/HFSBUF_251_1753/Y
+                               16.00          16.60          -0.60  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[5].pe_inst/HFSNET_24
+                               16.00          16.60          -0.60  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[5].pe_inst/HFSINV_1096_3129/Y
+                               16.00          16.60          -0.60  (VIOLATED) 
+
+   u_regs/c_buf[2][13]          8.00           8.60          -0.60  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[2][13]/Q
+                                8.00           8.60          -0.60  (VIOLATED) 
+
+   u_regs/a_buf[54][2]          8.00           8.60          -0.60  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[54][2]/Q
+                                8.00           8.60          -0.60  (VIOLATED) 
+
+   u_array/n281_CDR1            8.00           8.60          -0.60  (VIOLATED) 
+     PIN : u_array/U442/Y       8.00           8.60          -0.60  (VIOLATED) 
+
+   u_regs/ZBUF_24_45           16.00          16.60          -0.60  (VIOLATED) 
+     PIN : u_regs/ZBUF_24_inst_14653/Y
+                               16.00          16.60          -0.60  (VIOLATED) 
+
+   u_regs/HFSNET_1096          32.00          32.59          -0.59  (VIOLATED) 
+     PIN : u_regs/HFSBUF_141_1389/Y
+                               32.00          32.59          -0.59  (VIOLATED) 
+
+   u_regs/n4944_CDR1            8.00           8.59          -0.59  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6726/Y
+                                8.00           8.59          -0.59  (VIOLATED) 
+
+   u_regs/c_buf[32][21]         8.00           8.59          -0.59  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[32][21]/Q
+                                8.00           8.59          -0.59  (VIOLATED) 
+
+   u_regs/HFSNET_1484           8.00           8.58          -0.58  (VIOLATED) 
+     PIN : u_regs/HFSINV_708_2901/Y
+                                8.00           8.58          -0.58  (VIOLATED) 
+
+   u_array/n139_CDR1            8.00           8.58          -0.58  (VIOLATED) 
+     PIN : u_array/U254/Y       8.00           8.58          -0.58  (VIOLATED) 
+
+   u_array/ZCTSNET_541         64.00          64.58          -0.58  (VIOLATED) 
+     PIN : u_array/ZCTSINV_246112_4775/Y
+                               64.00          64.58          -0.58  (VIOLATED) 
+
+   u_array/tmp_net1006          8.00           8.58          -0.58  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7131/Y
+                                8.00           8.58          -0.58  (VIOLATED) 
+
+   u_regs/n5442_CDR1            8.00           8.57          -0.57  (VIOLATED) 
+     PIN : u_regs/U5271/Y       8.00           8.57          -0.57  (VIOLATED) 
+
+   u_array/pe_acc_out[5][0][13]
+                                8.00           8.57          -0.57  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[0].pe_inst/accumulator_reg[13]/Q
+                                8.00           8.57          -0.57  (VIOLATED) 
+
+   u_regs/HFSNET_1196          32.00          32.57          -0.57  (VIOLATED) 
+     PIN : u_regs/HFSBUF_135_1492/Y
+                               32.00          32.57          -0.57  (VIOLATED) 
+
+   u_regs/n275                  8.00           8.57          -0.57  (VIOLATED) 
+     PIN : u_regs/U1064/Y       8.00           8.57          -0.57  (VIOLATED) 
+
+   u_regs/n3324                 8.00           8.56          -0.56  (VIOLATED) 
+     PIN : u_regs/U757/Y        8.00           8.56          -0.56  (VIOLATED) 
+
+   u_regs/HFSNET_1264          32.00          32.56          -0.56  (VIOLATED) 
+     PIN : u_regs/HFSBUF_166_1560/Y
+                               32.00          32.56          -0.56  (VIOLATED) 
+
+   u_array/pe_acc_out[6][7][4]
+                                8.00           8.56          -0.56  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[7].pe_inst/accumulator_reg[4]/Q
+                                8.00           8.56          -0.56  (VIOLATED) 
+
+   arr_act_data[58]            16.00          16.55          -0.55  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_622/Y
+                               16.00          16.55          -0.55  (VIOLATED) 
+
+   u_array/n895_CDR1            8.00           8.55          -0.55  (VIOLATED) 
+     PIN : u_array/U1284/Y      8.00           8.55          -0.55  (VIOLATED) 
+
+   u_regs/a_buf[33][7]          8.00           8.55          -0.55  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[33][7]/Q
+                                8.00           8.55          -0.55  (VIOLATED) 
+
+   u_regs/c_buf[49][1]          8.00           8.55          -0.55  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[49][1]/Q
+                                8.00           8.55          -0.55  (VIOLATED) 
+
+   u_regs/c_buf[39][26]         8.00           8.55          -0.55  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[39][26]/Q
+                                8.00           8.55          -0.55  (VIOLATED) 
+
+   u_regs/a_buf[43][2]          8.00           8.55          -0.55  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[43][2]/Q
+                                8.00           8.55          -0.55  (VIOLATED) 
+
+   u_regs/a_buf[36][3]          8.00           8.55          -0.55  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[36][3]/Q
+                                8.00           8.55          -0.55  (VIOLATED) 
+
+   u_regs/HFSNET_960           16.00          16.55          -0.55  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_1224/Y
+                               16.00          16.55          -0.55  (VIOLATED) 
+
+   u_regs/n2600                 8.00           8.54          -0.54  (VIOLATED) 
+     PIN : u_regs/U1891/Y       8.00           8.54          -0.54  (VIOLATED) 
+
+   u_array/n513                 8.00           8.54          -0.54  (VIOLATED) 
+     PIN : u_array/U716/Y       8.00           8.54          -0.54  (VIOLATED) 
+
+   u_regs/n1582_CDR1            8.00           8.54          -0.54  (VIOLATED) 
+     PIN : u_regs/U4607/Y       8.00           8.54          -0.54  (VIOLATED) 
+
+   u_regs/a_buf[38][6]          8.00           8.53          -0.53  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[38][6]/Q
+                                8.00           8.53          -0.53  (VIOLATED) 
+
+   u_array/pe_acc_out[6][2][6]
+                                8.00           8.52          -0.52  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[2].pe_inst/accumulator_reg[6]/Q
+                                8.00           8.52          -0.52  (VIOLATED) 
+
+   u_regs/a_buf[24][1]          8.00           8.52          -0.52  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[24][1]/Q
+                                8.00           8.52          -0.52  (VIOLATED) 
+
+   u_regs/n1022_CDR1            8.00           8.52          -0.52  (VIOLATED) 
+     PIN : u_regs/U4036/Y       8.00           8.52          -0.52  (VIOLATED) 
+
+   u_regs/n4210                 8.00           8.52          -0.52  (VIOLATED) 
+     PIN : u_regs/U2346/Y       8.00           8.52          -0.52  (VIOLATED) 
+
+   u_regs/c_buf[27][23]         8.00           8.51          -0.51  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[27][23]/Q
+                                8.00           8.51          -0.51  (VIOLATED) 
+
+   u_regs/HFSNET_1734          32.00          32.51          -0.51  (VIOLATED) 
+     PIN : u_regs/HFSBUF_16973_3848/Y
+                               32.00          32.51          -0.51  (VIOLATED) 
+
+   u_regs/HFSNET_1207          32.00          32.51          -0.51  (VIOLATED) 
+     PIN : u_regs/HFSBUF_202_1503/Y
+                               32.00          32.51          -0.51  (VIOLATED) 
+
+   u_regs/a_buf[7][7]           8.00           8.51          -0.51  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[7][7]/Q
+                                8.00           8.51          -0.51  (VIOLATED) 
+
+   u_array/wgt_wire[1][7][5]
+                               16.00          16.51          -0.51  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[7].pe_inst/HFSBUF_295_1743/Y
+                               16.00          16.51          -0.51  (VIOLATED) 
+
+   u_regs/HFSNET_1746          32.00          32.51          -0.51  (VIOLATED) 
+     PIN : u_regs/HFSBUF_11868_3861/Y
+                               32.00          32.51          -0.51  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[1].pe_inst/HFSNET_19
+                               16.00          16.51          -0.51  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[1].pe_inst/HFSINV_631_3165/Y
+                               16.00          16.51          -0.51  (VIOLATED) 
+
+   u_regs/n1282_CDR1            8.00           8.51          -0.51  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6596/Y
+                                8.00           8.51          -0.51  (VIOLATED) 
+
+   arr_wgt_data[10]            16.00          16.50          -0.50  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_630/Y
+                               16.00          16.50          -0.50  (VIOLATED) 
+
+   u_array/act_wire[7][3][0]
+                               16.00          16.50          -0.50  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[2].pe_inst/HFSBUF_421_2525/Y
+                               16.00          16.50          -0.50  (VIOLATED) 
+
+   u_regs/HFSNET_1074          16.00          16.50          -0.50  (VIOLATED) 
+     PIN : u_regs/HFSBUF_51_1338/Y
+                               16.00          16.50          -0.50  (VIOLATED) 
+
+   u_array/wgt_wire[1][5][6]
+                               16.00          16.50          -0.50  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[5].pe_inst/HFSBUF_335_1734/Y
+                               16.00          16.50          -0.50  (VIOLATED) 
+
+   arr_result_data[144]        16.00          16.50          -0.50  (VIOLATED) 
+     PIN : u_array/U1245/Y     16.00          16.50          -0.50  (VIOLATED) 
+
+   u_regs/a_buf[23][6]          8.00           8.49          -0.49  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[23][6]/Q
+                                8.00           8.49          -0.49  (VIOLATED) 
+
+   u_regs/HFSNET_1171          32.00          32.49          -0.49  (VIOLATED) 
+     PIN : u_regs/HFSBUF_172_1466/Y
+                               32.00          32.49          -0.49  (VIOLATED) 
+
+   u_regs/a_buf[35][4]          8.00           8.49          -0.49  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[35][4]/Q
+                                8.00           8.49          -0.49  (VIOLATED) 
+
+   u_regs/n4151                 8.00           8.49          -0.49  (VIOLATED) 
+     PIN : u_regs/U5436/Y       8.00           8.49          -0.49  (VIOLATED) 
+
+   u_regs/HFSNET_1824          64.00          64.49          -0.49  (VIOLATED) 
+     PIN : u_regs/HFSBUF_16114_3941/Y
+                               64.00          64.49          -0.49  (VIOLATED) 
+
+   u_array/pe_acc_out[0][3][31]
+                                8.00           8.49          -0.49  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[3].pe_inst/accumulator_reg[31]/Q
+                                8.00           8.49          -0.49  (VIOLATED) 
+
+   u_array/wgt_wire[4][2][2]
+                               16.00          16.49          -0.49  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[2].pe_inst/HFSBUF_369_2036/Y
+                               16.00          16.49          -0.49  (VIOLATED) 
+
+   u_array/n346                 8.00           8.48          -0.48  (VIOLATED) 
+     PIN : u_array/U522/Y       8.00           8.48          -0.48  (VIOLATED) 
+
+   u_array/pe_acc_out[7][1][2]
+                                8.00           8.48          -0.48  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[1].pe_inst/accumulator_reg[2]/Q
+                                8.00           8.48          -0.48  (VIOLATED) 
+
+   u_regs/a_buf[52][7]          8.00           8.48          -0.48  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[52][7]/Q
+                                8.00           8.48          -0.48  (VIOLATED) 
+
+   u_array/act_wire[7][5][6]
+                               16.00          16.48          -0.48  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[4].pe_inst/HFSBUF_329_2158/Y
+                               16.00          16.48          -0.48  (VIOLATED) 
+
+   u_array/act_wire[6][3][0]
+                               16.00          16.48          -0.48  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[2].pe_inst/HFSBUF_389_2513/Y
+                               16.00          16.48          -0.48  (VIOLATED) 
+
+   u_array/pe_acc_out[5][7][1]
+                                8.00           8.48          -0.48  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[7].pe_inst/accumulator_reg[1]/Q
+                                8.00           8.48          -0.48  (VIOLATED) 
+
+   u_regs/HFSNET_167           16.00          16.48          -0.48  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_206/Y
+                               16.00          16.48          -0.48  (VIOLATED) 
+
+   u_array/pe_acc_out[5][5][13]
+                                8.00           8.47          -0.47  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[5].pe_inst/accumulator_reg[13]/Q
+                                8.00           8.47          -0.47  (VIOLATED) 
+
+   u_regs/HFSNET_1905          64.00          64.47          -0.47  (VIOLATED) 
+     PIN : u_regs/HFSBUF_33884_4062/Y
+                               64.00          64.47          -0.47  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][18]
+                                8.00           8.47          -0.47  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[18]/Q
+                                8.00           8.47          -0.47  (VIOLATED) 
+
+   u_regs/HFSNET_894           16.00          16.47          -0.47  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_1158/Y
+                               16.00          16.47          -0.47  (VIOLATED) 
+
+   u_array/pe_acc_out[1][7][13]
+                                8.00           8.47          -0.47  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[7].pe_inst/accumulator_reg[13]/Q
+                                8.00           8.47          -0.47  (VIOLATED) 
+
+   u_array/pe_acc_out[2][5][20]
+                                8.00           8.47          -0.47  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[5].pe_inst/accumulator_reg[20]/Q
+                                8.00           8.47          -0.47  (VIOLATED) 
+
+   u_array/gen_row[7].gen_col[0].pe_inst/HFSNET_23
+                               32.00          32.47          -0.47  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[0].pe_inst/HFSINV_1249_3640/Y
+                               32.00          32.47          -0.47  (VIOLATED) 
+
+   u_regs/n325                  8.00           8.46          -0.46  (VIOLATED) 
+     PIN : u_regs/U1142/Y       8.00           8.46          -0.46  (VIOLATED) 
+
+   u_array/act_wire[3][1][3]
+                               16.00          16.46          -0.46  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[0].pe_inst/HFSBUF_349_2252/Y
+                               16.00          16.46          -0.46  (VIOLATED) 
+
+   u_regs/c_buf[48][17]         8.00           8.46          -0.46  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[48][17]/Q
+                                8.00           8.46          -0.46  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[5].pe_inst/n28
+                                8.00           8.45          -0.45  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[5].pe_inst/U36/Y
+                                8.00           8.45          -0.45  (VIOLATED) 
+
+   u_array/HFSNET_125          64.00          64.45          -0.45  (VIOLATED) 
+     PIN : u_array/HFSINV_4418_3727/Y
+                               64.00          64.45          -0.45  (VIOLATED) 
+
+   u_array/HFSNET_158          32.00          32.45          -0.45  (VIOLATED) 
+     PIN : u_array/HFSBUF_715_3761/Y
+                               32.00          32.45          -0.45  (VIOLATED) 
+
+   u_regs/HFSNET_1434          16.00          16.45          -0.45  (VIOLATED) 
+     PIN : u_regs/HFSINV_376_2817/Y
+                               16.00          16.45          -0.45  (VIOLATED) 
+
+   arr_result_data[136]        16.00          16.45          -0.45  (VIOLATED) 
+     PIN : u_array/U1275/Y     16.00          16.45          -0.45  (VIOLATED) 
+
+   u_regs/n6615                 8.00           8.43          -0.43  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8392/Y
+                                8.00           8.43          -0.43  (VIOLATED) 
+
+   u_array/n838_CDR1            8.00           8.43          -0.43  (VIOLATED) 
+     PIN : u_array/U1211/Y      8.00           8.43          -0.43  (VIOLATED) 
+
+   u_array/gen_row[2].gen_col[7].pe_inst/HFSNET_19
+                               16.00          16.43          -0.43  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[7].pe_inst/HFSINV_826_3139/Y
+                               16.00          16.43          -0.43  (VIOLATED) 
+
+   u_array/tmp_net969           8.00           8.43          -0.43  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7076/Y
+                                8.00           8.43          -0.43  (VIOLATED) 
+
+   u_array/HFSNET_19           16.00          16.42          -0.42  (VIOLATED) 
+     PIN : u_array/HFSBUF_9_616/Y
+                               16.00          16.42          -0.42  (VIOLATED) 
+
+   arr_act_data[14]             8.00           8.42          -0.42  (VIOLATED) 
+     PIN : u_regs/arr_act_data_reg[14]/Q
+                                8.00           8.42          -0.42  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][25]
+                                8.00           8.42          -0.42  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[25]/Q
+                                8.00           8.42          -0.42  (VIOLATED) 
+
+   u_array/wgt_wire[2][7][4]
+                               16.00          16.42          -0.42  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[7].pe_inst/HFSBUF_287_1776/Y
+                               16.00          16.42          -0.42  (VIOLATED) 
+
+   u_regs/c_buf[14][1]          8.00           8.42          -0.42  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[14][1]/Q
+                                8.00           8.42          -0.42  (VIOLATED) 
+
+   u_array/pe_acc_out[4][0][12]
+                                8.00           8.41          -0.41  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[0].pe_inst/accumulator_reg[12]/Q
+                                8.00           8.41          -0.41  (VIOLATED) 
+
+   u_regs/n234_CDR1             8.00           8.41          -0.41  (VIOLATED) 
+     PIN : u_regs/U1011/Y       8.00           8.41          -0.41  (VIOLATED) 
+
+   arr_result_data[6]           8.00           8.41          -0.41  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_1_7068/Y
+                                8.00           8.41          -0.41  (VIOLATED) 
+
+   u_array/HFSNET_142          32.00          32.41          -0.41  (VIOLATED) 
+     PIN : u_array/HFSBUF_888_3745/Y
+                               32.00          32.41          -0.41  (VIOLATED) 
+
+   u_array/n900_CDR1            8.00           8.41          -0.41  (VIOLATED) 
+     PIN : u_array/U1289/Y      8.00           8.41          -0.41  (VIOLATED) 
+
+   u_regs/c_buf[37][19]         8.00           8.41          -0.41  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[37][19]/Q
+                                8.00           8.41          -0.41  (VIOLATED) 
+
+   u_array/wgt_wire[6][3][0]
+                               32.00          32.41          -0.41  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[3].pe_inst/HFSBUF_558_2646/Y
+                               32.00          32.41          -0.41  (VIOLATED) 
+
+   u_regs/HFSNET_1958          32.00          32.40          -0.40  (VIOLATED) 
+     PIN : u_regs/HFSBUF_22475_4115/Y
+                               32.00          32.40          -0.40  (VIOLATED) 
+
+   u_array/HFSNET_173          32.00          32.40          -0.40  (VIOLATED) 
+     PIN : u_array/HFSBUF_1852_3776/Y
+                               32.00          32.40          -0.40  (VIOLATED) 
+
+   u_array/n240                 8.00           8.40          -0.40  (VIOLATED) 
+     PIN : u_array/U389/Y       8.00           8.40          -0.40  (VIOLATED) 
+
+   arr_result_data[180]         8.00           8.40          -0.40  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_1_7982/Y
+                                8.00           8.40          -0.40  (VIOLATED) 
+
+   u_regs/HFSNET_1455          16.00          16.40          -0.40  (VIOLATED) 
+     PIN : u_regs/HFSINV_389_2853/Y
+                               16.00          16.40          -0.40  (VIOLATED) 
+
+   u_array/tmp_net982           8.00           8.39          -0.39  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7095/Y
+                                8.00           8.39          -0.39  (VIOLATED) 
+
+   u_regs/n431                  8.00           8.39          -0.39  (VIOLATED) 
+     PIN : u_regs/U1272/Y       8.00           8.39          -0.39  (VIOLATED) 
+
+   u_array/wgt_wire[3][7][4]
+                               16.00          16.39          -0.39  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[7].pe_inst/HFSBUF_303_1810/Y
+                               16.00          16.39          -0.39  (VIOLATED) 
+
+   u_array/wgt_wire[7][2][0]
+                               16.00          16.39          -0.39  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[2].pe_inst/HFSBUF_467_2544/Y
+                               16.00          16.39          -0.39  (VIOLATED) 
+
+   u_regs/HFSNET_145            8.00           8.39          -0.39  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7001/Y
+                                8.00           8.39          -0.39  (VIOLATED) 
+
+   u_regs/c_buf[56][12]         8.00           8.39          -0.39  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[56][12]/Q
+                                8.00           8.39          -0.39  (VIOLATED) 
+
+   arr_result_data[103]        16.00          16.38          -0.38  (VIOLATED) 
+     PIN : u_array/U1345/Y     16.00          16.38          -0.38  (VIOLATED) 
+
+   u_array/gen_row[5].gen_col[3].pe_inst/HFSNET_23
+                               16.00          16.37          -0.37  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[3].pe_inst/HFSINV_1405_3445/Y
+                               16.00          16.37          -0.37  (VIOLATED) 
+
+   u_regs/n452_CDR1             8.00           8.37          -0.37  (VIOLATED) 
+     PIN : u_regs/U1295/Y       8.00           8.37          -0.37  (VIOLATED) 
+
+   u_array/n538                 8.00           8.37          -0.37  (VIOLATED) 
+     PIN : u_array/U751/Y       8.00           8.37          -0.37  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[6].pe_inst/HFSNET_18
+                               16.00          16.36          -0.36  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[6].pe_inst/HFSINV_1015_3170/Y
+                               16.00          16.36          -0.36  (VIOLATED) 
+
+   u_array/act_wire[4][1][3]
+                               16.00          16.36          -0.36  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[0].pe_inst/HFSBUF_424_2278/Y
+                               16.00          16.36          -0.36  (VIOLATED) 
+
+   arr_wgt_data[63]             8.00           8.36          -0.36  (VIOLATED) 
+     PIN : u_regs/arr_wgt_data_reg[63]/Q
+                                8.00           8.36          -0.36  (VIOLATED) 
+
+   u_array/gen_row[2].gen_col[0].pe_inst/HFSNET_19
+                               16.00          16.36          -0.36  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[0].pe_inst/HFSINV_1068_3402/Y
+                               16.00          16.36          -0.36  (VIOLATED) 
+
+   arr_wgt_data[41]            16.00          16.36          -0.36  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_647/Y
+                               16.00          16.36          -0.36  (VIOLATED) 
+
+   u_array/cycle_cnt[2]         8.00           8.36          -0.36  (VIOLATED) 
+     PIN : u_array/cycle_cnt_reg[2]/Q
+                                8.00           8.36          -0.36  (VIOLATED) 
+
+   u_regs/c_buf[24][4]          8.00           8.35          -0.35  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[24][4]/Q
+                                8.00           8.35          -0.35  (VIOLATED) 
+
+   u_array/n574_CDR1            8.00           8.35          -0.35  (VIOLATED) 
+     PIN : u_array/U796/Y       8.00           8.35          -0.35  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[7].pe_inst/HFSNET_22
+                               16.00          16.35          -0.35  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[7].pe_inst/HFSINV_713_3131/Y
+                               16.00          16.35          -0.35  (VIOLATED) 
+
+   u_array/n652                 8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_array/U987/Y       8.00           8.34          -0.34  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][20]
+                                8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[20]/Q
+                                8.00           8.34          -0.34  (VIOLATED) 
+
+   u_array/pe_acc_out[5][5][12]
+                                8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[5].pe_inst/accumulator_reg[12]/Q
+                                8.00           8.34          -0.34  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[0].pe_inst/n187
+                                8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[0].pe_inst/U35/Y
+                                8.00           8.34          -0.34  (VIOLATED) 
+
+   u_regs/HFSNET_1038          16.00          16.34          -0.34  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_1302/Y
+                               16.00          16.34          -0.34  (VIOLATED) 
+
+   u_regs/c_buf[4][23]          8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[4][23]/Q
+                                8.00           8.34          -0.34  (VIOLATED) 
+
+   u_array/gen_row[4].gen_col[4].pe_inst/HFSNET_21
+                               16.00          16.34          -0.34  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[4].pe_inst/HFSINV_585_3152/Y
+                               16.00          16.34          -0.34  (VIOLATED) 
+
+   u_regs/c_buf[6][1]           8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[6][1]/Q
+                                8.00           8.34          -0.34  (VIOLATED) 
+
+   u_array/n131_CDR1            8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_array/U243/Y       8.00           8.34          -0.34  (VIOLATED) 
+
+   u_regs/a_buf[43][5]          8.00           8.34          -0.34  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[43][5]/Q
+                                8.00           8.34          -0.34  (VIOLATED) 
+
+   u_array/wgt_wire[5][5][3]
+                               16.00          16.33          -0.33  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[5].pe_inst/HFSBUF_231_1867/Y
+                               16.00          16.33          -0.33  (VIOLATED) 
+
+   arr_act_data[57]            16.00          16.33          -0.33  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_621/Y
+                               16.00          16.33          -0.33  (VIOLATED) 
+
+   u_regs/n2111                 8.00           8.33          -0.33  (VIOLATED) 
+     PIN : u_regs/U5885/Y       8.00           8.33          -0.33  (VIOLATED) 
+
+   u_regs/b_buf[10][5]          8.00           8.33          -0.33  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[10][5]/Q
+                                8.00           8.33          -0.33  (VIOLATED) 
+
+   u_array/HFSNET_155          64.00          64.33          -0.33  (VIOLATED) 
+     PIN : u_array/HFSBUF_880_3758/Y
+                               64.00          64.33          -0.33  (VIOLATED) 
+
+   arr_result_data[138]        16.00          16.32          -0.32  (VIOLATED) 
+     PIN : u_array/U934/Y      16.00          16.32          -0.32  (VIOLATED) 
+
+   u_array/n855                 8.00           8.32          -0.32  (VIOLATED) 
+     PIN : u_array/U1231/Y      8.00           8.32          -0.32  (VIOLATED) 
+
+   u_regs/HFSNET_65            16.00          16.32          -0.32  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_75/Y
+                               16.00          16.32          -0.32  (VIOLATED) 
+
+   u_array/pe_acc_out[0][0][6]
+                                8.00           8.32          -0.32  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[0].pe_inst/accumulator_reg[6]/Q
+                                8.00           8.32          -0.32  (VIOLATED) 
+
+   u_regs/b_buf[60][7]          8.00           8.32          -0.32  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[60][7]/Q
+                                8.00           8.32          -0.32  (VIOLATED) 
+
+   u_array/wgt_wire[5][0][7]
+                               16.00          16.32          -0.32  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[0].pe_inst/HFSBUF_470_2471/Y
+                               16.00          16.32          -0.32  (VIOLATED) 
+
+   u_array/act_wire[5][3][6]
+                               16.00          16.32          -0.32  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSBUF_273_2098/Y
+                               16.00          16.32          -0.32  (VIOLATED) 
+
+   u_array/pe_acc_out[1][5][27]
+                                8.00           8.32          -0.32  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[5].pe_inst/accumulator_reg[27]/Q
+                                8.00           8.32          -0.32  (VIOLATED) 
+
+   u_regs/n5721                 8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_regs/U160/Y        8.00           8.31          -0.31  (VIOLATED) 
+
+   arr_result_data[7]           8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_1_7141/Y
+                                8.00           8.31          -0.31  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[0].pe_inst/n27
+                                8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[0].pe_inst/U39/Y
+                                8.00           8.31          -0.31  (VIOLATED) 
+
+   u_array/pe_acc_out[0][7][3]
+                                8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[7].pe_inst/accumulator_reg[3]/Q
+                                8.00           8.31          -0.31  (VIOLATED) 
+
+   u_array/n421_CDR1            8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_array/U616/Y       8.00           8.31          -0.31  (VIOLATED) 
+
+   u_regs/n1920                 8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_regs/U5998/Y       8.00           8.31          -0.31  (VIOLATED) 
+
+   u_regs/b_buf[62][5]          8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[62][5]/Q
+                                8.00           8.31          -0.31  (VIOLATED) 
+
+   u_regs/b_buf[7][1]           8.00           8.31          -0.31  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[7][1]/Q
+                                8.00           8.31          -0.31  (VIOLATED) 
+
+   u_array/gen_row[2].gen_col[4].pe_inst/HFSNET_28
+                               16.00          16.30          -0.30  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[4].pe_inst/HFSINV_1220_3407/Y
+                               16.00          16.30          -0.30  (VIOLATED) 
+
+   u_regs/c_buf[43][8]          8.00           8.30          -0.30  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[43][8]/Q
+                                8.00           8.30          -0.30  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][18]
+                                8.00           8.30          -0.30  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[18]/Q
+                                8.00           8.30          -0.30  (VIOLATED) 
+
+   u_array/HFSNET_16           32.00          32.30          -0.30  (VIOLATED) 
+     PIN : u_array/HFSBUF_9_597/Y
+                               32.00          32.30          -0.30  (VIOLATED) 
+
+   u_array/gen_row[5].gen_col[4].pe_inst/n252
+                                8.00           8.30          -0.30  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[4].pe_inst/U38/Y
+                                8.00           8.30          -0.30  (VIOLATED) 
+
+   u_array/pe_acc_out[1][6][25]
+                                8.00           8.30          -0.30  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[6].pe_inst/accumulator_reg[25]/Q
+                                8.00           8.30          -0.30  (VIOLATED) 
+
+   u_array/tmp_net1014          8.00           8.30          -0.30  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7143/Y
+                                8.00           8.30          -0.30  (VIOLATED) 
+
+   u_array/wgt_wire[2][1][5]
+                               16.00          16.30          -0.30  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[1].pe_inst/HFSBUF_264_1751/Y
+                               16.00          16.30          -0.30  (VIOLATED) 
+
+   u_array/n385_CDR1            8.00           8.30          -0.30  (VIOLATED) 
+     PIN : u_array/U573/Y       8.00           8.30          -0.30  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[2].pe_inst/HFSNET_20
+                               16.00          16.29          -0.29  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[2].pe_inst/HFSINV_570_3126/Y
+                               16.00          16.29          -0.29  (VIOLATED) 
+
+   u_regs/c_buf[45][20]         8.00           8.29          -0.29  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[45][20]/Q
+                                8.00           8.29          -0.29  (VIOLATED) 
+
+   u_array/act_wire[2][3][4]
+                               16.00          16.29          -0.29  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[2].pe_inst/HFSBUF_359_2235/Y
+                               16.00          16.29          -0.29  (VIOLATED) 
+
+   u_array/n510                 8.00           8.28          -0.28  (VIOLATED) 
+     PIN : u_array/U719/Y       8.00           8.28          -0.28  (VIOLATED) 
+
+   u_array/n585_CDR1            8.00           8.28          -0.28  (VIOLATED) 
+     PIN : u_array/U803/Y       8.00           8.28          -0.28  (VIOLATED) 
+
+   u_array/pe_acc_out[6][3][20]
+                                8.00           8.28          -0.28  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[3].pe_inst/accumulator_reg[20]/Q
+                                8.00           8.28          -0.28  (VIOLATED) 
+
+   u_regs/n5655                32.00          32.28          -0.28  (VIOLATED) 
+     PIN : u_regs/U712/Y       32.00          32.28          -0.28  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][17]
+                                8.00           8.28          -0.28  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[17]/Q
+                                8.00           8.28          -0.28  (VIOLATED) 
+
+   u_regs/n183                 16.00          16.28          -0.28  (VIOLATED) 
+     PIN : u_regs/U185/Y       16.00          16.28          -0.28  (VIOLATED) 
+
+   u_regs/HFSNET_1457          16.00          16.28          -0.28  (VIOLATED) 
+     PIN : u_regs/HFSINV_404_2857/Y
+                               16.00          16.28          -0.28  (VIOLATED) 
+
+   u_array/n267_CDR1            8.00           8.27          -0.27  (VIOLATED) 
+     PIN : u_array/U420/Y       8.00           8.27          -0.27  (VIOLATED) 
+
+   u_regs/n1575                 8.00           8.27          -0.27  (VIOLATED) 
+     PIN : u_regs/U4605/Y       8.00           8.27          -0.27  (VIOLATED) 
+
+   u_regs/n1410_CDR1            8.00           8.26          -0.26  (VIOLATED) 
+     PIN : u_regs/U4431/Y       8.00           8.26          -0.26  (VIOLATED) 
+
+   u_regs/a_buf[4][6]           8.00           8.26          -0.26  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[4][6]/Q
+                                8.00           8.26          -0.26  (VIOLATED) 
+
+   u_regs/HFSNET_883           16.00          16.26          -0.26  (VIOLATED) 
+     PIN : u_regs/HFSBUF_51_1147/Y
+                               16.00          16.26          -0.26  (VIOLATED) 
+
+   u_array/wgt_wire[2][6][6]
+                               16.00          16.26          -0.26  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[6].pe_inst/HFSBUF_293_1774/Y
+                               16.00          16.26          -0.26  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[4].pe_inst/n25
+                                8.00           8.25          -0.25  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[4].pe_inst/U38/Y
+                                8.00           8.25          -0.25  (VIOLATED) 
+
+   u_array/wgt_wire[7][0][4]
+                               16.00          16.25          -0.25  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[0].pe_inst/HFSBUF_278_1675/Y
+                               16.00          16.25          -0.25  (VIOLATED) 
+
+   u_regs/c_buf[6][19]          8.00           8.25          -0.25  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[6][19]/Q
+                                8.00           8.25          -0.25  (VIOLATED) 
+
+   u_regs/n1187_CDR1            8.00           8.25          -0.25  (VIOLATED) 
+     PIN : u_regs/U4201/Y       8.00           8.25          -0.25  (VIOLATED) 
+
+   u_regs/c_buf[11][5]          8.00           8.25          -0.25  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[11][5]/Q
+                                8.00           8.25          -0.25  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[0].pe_inst/HFSNET_16
+                               32.00          32.25          -0.25  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[0].pe_inst/HFSINV_1682_3632/Y
+                               32.00          32.25          -0.25  (VIOLATED) 
+
+   u_array/pe_acc_out[4][1][11]
+                                8.00           8.24          -0.24  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[1].pe_inst/accumulator_reg[11]/Q
+                                8.00           8.24          -0.24  (VIOLATED) 
+
+   u_regs/HFSNET_1486           8.00           8.24          -0.24  (VIOLATED) 
+     PIN : u_regs/HFSINV_545_2905/Y
+                                8.00           8.24          -0.24  (VIOLATED) 
+
+   u_array/pe_acc_out[5][1][5]
+                                8.00           8.24          -0.24  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[1].pe_inst/accumulator_reg[5]/Q
+                                8.00           8.24          -0.24  (VIOLATED) 
+
+   u_array/HFSNET_120          32.00          32.24          -0.24  (VIOLATED) 
+     PIN : u_array/HFSBUF_5018_3656/Y
+                               32.00          32.24          -0.24  (VIOLATED) 
+
+   u_regs/HFSNET_868           16.00          16.24          -0.24  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_966/Y
+                               16.00          16.24          -0.24  (VIOLATED) 
+
+   u_array/HFSNET_270          32.00          32.24          -0.24  (VIOLATED) 
+     PIN : u_array/HFSBUF_4603_4171/Y
+                               32.00          32.24          -0.24  (VIOLATED) 
+
+   u_array/pe_acc_out[1][6][27]
+                                8.00           8.24          -0.24  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[6].pe_inst/accumulator_reg[27]/Q
+                                8.00           8.24          -0.24  (VIOLATED) 
+
+   u_array/pe_acc_out[5][1][7]
+                                8.00           8.24          -0.24  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[1].pe_inst/accumulator_reg[7]/Q
+                                8.00           8.24          -0.24  (VIOLATED) 
+
+   u_array/gen_row[3].gen_col[7].pe_inst/HFSNET_13
+                               16.00          16.23          -0.23  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[7].pe_inst/HFSINV_774_3147/Y
+                               16.00          16.23          -0.23  (VIOLATED) 
+
+   HFSNET_11                    8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_array/U115/Y       8.00           8.23          -0.23  (VIOLATED) 
+
+   u_array/pe_acc_out[6][4][1]
+                                8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[4].pe_inst/accumulator_reg[1]/Q
+                                8.00           8.23          -0.23  (VIOLATED) 
+
+   u_array/gen_row[5].gen_col[2].pe_inst/HFSNET_27
+                               16.00          16.23          -0.23  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/HFSINV_754_3158/Y
+                               16.00          16.23          -0.23  (VIOLATED) 
+
+   u_array/pe_acc_out[3][0][1]
+                                8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[0].pe_inst/accumulator_reg[1]/Q
+                                8.00           8.23          -0.23  (VIOLATED) 
+
+   u_array/n1097                8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_array/U1490/Y      8.00           8.23          -0.23  (VIOLATED) 
+
+   u_regs/c_buf[2][22]          8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[2][22]/Q
+                                8.00           8.23          -0.23  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][8]
+                                8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[8]/Q
+                                8.00           8.23          -0.23  (VIOLATED) 
+
+   u_regs/n6299                 8.00           8.23          -0.23  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7269/Y
+                                8.00           8.23          -0.23  (VIOLATED) 
+
+   u_regs/HFSNET_1466           8.00           8.22          -0.22  (VIOLATED) 
+     PIN : u_regs/HFSINV_580_2873/Y
+                                8.00           8.22          -0.22  (VIOLATED) 
+
+   u_regs/c_buf[41][11]         8.00           8.22          -0.22  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[41][11]/Q
+                                8.00           8.22          -0.22  (VIOLATED) 
+
+   u_regs/c_buf[54][22]         8.00           8.21          -0.21  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[54][22]/Q
+                                8.00           8.21          -0.21  (VIOLATED) 
+
+   u_regs/n857                 32.00          32.21          -0.21  (VIOLATED) 
+     PIN : u_regs/U536/Y       32.00          32.21          -0.21  (VIOLATED) 
+
+   u_array/pe_acc_out[0][7][6]
+                                8.00           8.21          -0.21  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[7].pe_inst/accumulator_reg[6]/Q
+                                8.00           8.21          -0.21  (VIOLATED) 
+
+   u_regs/n1199_CDR1            8.00           8.21          -0.21  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6570/Y
+                                8.00           8.21          -0.21  (VIOLATED) 
+
+   u_array/pe_acc_out[7][5][2]
+                                8.00           8.21          -0.21  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[5].pe_inst/accumulator_reg[2]/Q
+                                8.00           8.21          -0.21  (VIOLATED) 
+
+   u_regs/copt_gre_net_5427    16.00          16.21          -0.21  (VIOLATED) 
+     PIN : u_regs/copt_gre_mt_inst_15178/Y
+                               16.00          16.21          -0.21  (VIOLATED) 
+
+   u_array/n148                 8.00           8.20          -0.20  (VIOLATED) 
+     PIN : u_array/U263/Y       8.00           8.20          -0.20  (VIOLATED) 
+
+   u_regs/c_buf[2][15]          8.00           8.20          -0.20  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[2][15]/Q
+                                8.00           8.20          -0.20  (VIOLATED) 
+
+   u_array/gre_a_BUF_1116_177
+                               16.00          16.20          -0.20  (VIOLATED) 
+     PIN : u_array/gre_a_BUF_1116_inst_15350/Y
+                               16.00          16.20          -0.20  (VIOLATED) 
+
+   u_regs/HFSNET_100           16.00          16.20          -0.20  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_122/Y
+                               16.00          16.20          -0.20  (VIOLATED) 
+
+   u_array/n559                 8.00           8.20          -0.20  (VIOLATED) 
+     PIN : u_array/U775/Y       8.00           8.20          -0.20  (VIOLATED) 
+
+   u_array/pe_acc_out[0][0][10]
+                                8.00           8.20          -0.20  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[0].pe_inst/accumulator_reg[10]/Q
+                                8.00           8.20          -0.20  (VIOLATED) 
+
+   u_array/act_wire[5][6][0]
+                               16.00          16.20          -0.20  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[5].pe_inst/HFSBUF_432_2504/Y
+                               16.00          16.20          -0.20  (VIOLATED) 
+
+   u_regs/c_buf[5][21]          8.00           8.19          -0.19  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[5][21]/Q
+                                8.00           8.19          -0.19  (VIOLATED) 
+
+   u_array/HFSNET_175          32.00          32.19          -0.19  (VIOLATED) 
+     PIN : u_array/HFSBUF_1305_3778/Y
+                               32.00          32.19          -0.19  (VIOLATED) 
+
+   u_regs/n5522                 8.00           8.19          -0.19  (VIOLATED) 
+     PIN : u_regs/U3923/Y       8.00           8.19          -0.19  (VIOLATED) 
+
+   u_array/wgt_wire[7][4][6]
+                               16.00          16.19          -0.19  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[4].pe_inst/HFSBUF_256_1693/Y
+                               16.00          16.19          -0.19  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[3].pe_inst/HFSNET_23
+                               16.00          16.18          -0.18  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[3].pe_inst/HFSINV_1110_3167/Y
+                               16.00          16.18          -0.18  (VIOLATED) 
+
+   u_regs/c_buf[25][9]          8.00           8.18          -0.18  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[25][9]/Q
+                                8.00           8.18          -0.18  (VIOLATED) 
+
+   u_regs/n1496_CDR1            8.00           8.18          -0.18  (VIOLATED) 
+     PIN : u_regs/U4519/Y       8.00           8.18          -0.18  (VIOLATED) 
+
+   u_regs/b_buf[10][6]          8.00           8.18          -0.18  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[10][6]/Q
+                                8.00           8.18          -0.18  (VIOLATED) 
+
+   u_regs/HFSNET_1372          32.00          32.18          -0.18  (VIOLATED) 
+     PIN : u_regs/HFSBUF_581_2660/Y
+                               32.00          32.18          -0.18  (VIOLATED) 
+
+   arr_act_data[41]             8.00           8.17          -0.17  (VIOLATED) 
+     PIN : u_regs/arr_act_data_reg[41]/Q
+                                8.00           8.17          -0.17  (VIOLATED) 
+
+   u_array/gen_row[0].gen_col[6].pe_inst/HFSNET_29
+                               32.00          32.17          -0.17  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[6].pe_inst/HFSINV_2256_3590/Y
+                               32.00          32.17          -0.17  (VIOLATED) 
+
+   u_regs/n733                 16.00          16.17          -0.17  (VIOLATED) 
+     PIN : u_regs/U2760/Y      16.00          16.17          -0.17  (VIOLATED) 
+
+   u_array/HFSNET_119          16.00          16.17          -0.17  (VIOLATED) 
+     PIN : u_array/HFSBUF_336_3655/Y
+                               16.00          16.17          -0.17  (VIOLATED) 
+
+   u_regs/HFSNET_1549          64.00          64.16          -0.16  (VIOLATED) 
+     PIN : u_regs/HFSBUF_1101_3500/Y
+                               64.00          64.16          -0.16  (VIOLATED) 
+
+   u_array/gen_row[7].gen_col[4].pe_inst/HFSNET_19
+                               32.00          32.16          -0.16  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[4].pe_inst/HFSINV_1509_3644/Y
+                               32.00          32.16          -0.16  (VIOLATED) 
+
+   HFSNET_14                   64.00          64.15          -0.15  (VIOLATED) 
+     PIN : HFSBUF_13330_4070/Y
+                               64.00          64.15          -0.15  (VIOLATED) 
+
+   u_regs/HFSNET_659           16.00          16.15          -0.15  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_757/Y
+                               16.00          16.15          -0.15  (VIOLATED) 
+
+   u_array/pe_acc_out[5][5][16]
+                                8.00           8.15          -0.15  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[5].pe_inst/accumulator_reg[16]/Q
+                                8.00           8.15          -0.15  (VIOLATED) 
+
+   u_array/wgt_wire[4][1][6]
+                               16.00          16.15          -0.15  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[1].pe_inst/HFSBUF_262_1820/Y
+                               16.00          16.15          -0.15  (VIOLATED) 
+
+   u_regs/c_buf[1][15]          8.00           8.15          -0.15  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[1][15]/Q
+                                8.00           8.15          -0.15  (VIOLATED) 
+
+   u_array/n426                 8.00           8.15          -0.15  (VIOLATED) 
+     PIN : u_array/U620/Y       8.00           8.15          -0.15  (VIOLATED) 
+
+   u_regs/n5073_CDR1            8.00           8.15          -0.15  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7007_roptpi_14322/Y
+                                8.00           8.15          -0.15  (VIOLATED) 
+
+   u_regs/b_buf[11][5]          8.00           8.14          -0.14  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[11][5]/Q
+                                8.00           8.14          -0.14  (VIOLATED) 
+
+   u_regs/c_buf[49][17]         8.00           8.14          -0.14  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[49][17]/Q
+                                8.00           8.14          -0.14  (VIOLATED) 
+
+   arr_result_data[155]        16.00          16.14          -0.14  (VIOLATED) 
+     PIN : u_array/U622/Y      16.00          16.14          -0.14  (VIOLATED) 
+
+   u_regs/HFSNET_1330          32.00          32.14          -0.14  (VIOLATED) 
+     PIN : u_regs/HFSBUF_124_1627/Y
+                               32.00          32.14          -0.14  (VIOLATED) 
+
+   u_regs/c_buf[23][30]         8.00           8.14          -0.14  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[23][30]/Q
+                                8.00           8.14          -0.14  (VIOLATED) 
+
+   u_array/tmp_net1002          8.00           8.13          -0.13  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_3_7125/Y
+                                8.00           8.13          -0.13  (VIOLATED) 
+
+   u_regs/c_buf[34][22]         8.00           8.13          -0.13  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[34][22]/Q
+                                8.00           8.13          -0.13  (VIOLATED) 
+
+   u_array/gen_row[5].gen_col[6].pe_inst/HFSNET_25
+                               16.00          16.13          -0.13  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[6].pe_inst/HFSINV_918_3162/Y
+                               16.00          16.13          -0.13  (VIOLATED) 
+
+   u_regs/HFSNET_1834          32.00          32.13          -0.13  (VIOLATED) 
+     PIN : u_regs/HFSBUF_14404_3952/Y
+                               32.00          32.13          -0.13  (VIOLATED) 
+
+   u_array/gen_row[4].gen_col[2].pe_inst/n251
+                                8.00           8.13          -0.13  (VIOLATED) 
+     PIN : u_array/gen_row[4].gen_col[2].pe_inst/U38/Y
+                                8.00           8.13          -0.13  (VIOLATED) 
+
+   u_regs/HFSNET_1174          32.00          32.13          -0.13  (VIOLATED) 
+     PIN : u_regs/HFSBUF_147_1469/Y
+                               32.00          32.13          -0.13  (VIOLATED) 
+
+   u_regs/b_buf[47][3]          8.00           8.13          -0.13  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[47][3]/Q
+                                8.00           8.13          -0.13  (VIOLATED) 
+
+   u_regs/c_buf[53][2]          8.00           8.13          -0.13  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[53][2]/Q
+                                8.00           8.13          -0.13  (VIOLATED) 
+
+   arr_act_data[46]            16.00          16.13          -0.13  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_610/Y
+                               16.00          16.13          -0.13  (VIOLATED) 
+
+   u_array/wgt_wire[4][1][5]
+                               16.00          16.13          -0.13  (VIOLATED) 
+     PIN : u_array/gen_row[3].gen_col[1].pe_inst/HFSBUF_247_1819/Y
+                               16.00          16.13          -0.13  (VIOLATED) 
+
+   u_array/gen_row[0].gen_col[6].pe_inst/HFSNET_28
+                               16.00          16.13          -0.13  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[6].pe_inst/HFSINV_1032_3388/Y
+                               16.00          16.13          -0.13  (VIOLATED) 
+
+   u_regs/n6308                 8.00           8.12          -0.12  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7281/Y
+                                8.00           8.12          -0.12  (VIOLATED) 
+
+   u_array/n804                 8.00           8.12          -0.12  (VIOLATED) 
+     PIN : u_array/U1173/Y      8.00           8.12          -0.12  (VIOLATED) 
+
+   u_regs/n6279                 8.00           8.12          -0.12  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_7256/Y
+                                8.00           8.12          -0.12  (VIOLATED) 
+
+   u_array/n96                  8.00           8.12          -0.12  (VIOLATED) 
+     PIN : u_array/U178/Y       8.00           8.12          -0.12  (VIOLATED) 
+
+   u_regs/n967_CDR1             8.00           8.12          -0.12  (VIOLATED) 
+     PIN : u_regs/U3977/Y       8.00           8.12          -0.12  (VIOLATED) 
+
+   u_regs/HFSNET_1374          32.00          32.12          -0.12  (VIOLATED) 
+     PIN : u_regs/HFSBUF_409_2662/Y
+                               32.00          32.12          -0.12  (VIOLATED) 
+
+   u_array/gen_row[0].gen_col[3].pe_inst/HFSNET_12
+                               16.00          16.12          -0.12  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[3].pe_inst/HFSBUF_412_2395/Y
+                               16.00          16.12          -0.12  (VIOLATED) 
+
+   u_regs/tmp_net692            8.00           8.11          -0.11  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_2_6695/Y
+                                8.00           8.11          -0.11  (VIOLATED) 
+
+   u_array/n129                 8.00           8.11          -0.11  (VIOLATED) 
+     PIN : u_array/U234/Y       8.00           8.11          -0.11  (VIOLATED) 
+
+   arr_result_data[142]        16.00          16.11          -0.11  (VIOLATED) 
+     PIN : u_array/U1255/Y     16.00          16.11          -0.11  (VIOLATED) 
+
+   arr_act_data[55]            16.00          16.11          -0.11  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_619/Y
+                               16.00          16.11          -0.11  (VIOLATED) 
+
+   u_array/gen_row[7].gen_col[7].pe_inst/HFSNET_13
+                               16.00          16.11          -0.11  (VIOLATED) 
+     PIN : u_array/gen_row[7].gen_col[7].pe_inst/HFSINV_1366_3478/Y
+                               16.00          16.11          -0.11  (VIOLATED) 
+
+   u_regs/ZBUF_17_5            16.00          16.11          -0.11  (VIOLATED) 
+     PIN : u_regs/ZBUF_17_inst_4555/Y
+                               16.00          16.11          -0.11  (VIOLATED) 
+
+   u_regs/n245_CDR1             8.00           8.11          -0.11  (VIOLATED) 
+     PIN : u_regs/U1024/Y       8.00           8.11          -0.11  (VIOLATED) 
+
+   arr_result_data[11]          8.00           8.10          -0.10  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_1_7138/Y
+                                8.00           8.10          -0.10  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[3].pe_inst/HFSNET_20
+                               16.00          16.10          -0.10  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[3].pe_inst/HFSINV_1461_3396/Y
+                               16.00          16.10          -0.10  (VIOLATED) 
+
+   u_regs/n416_CDR1             8.00           8.10          -0.10  (VIOLATED) 
+     PIN : u_regs/U1253/Y       8.00           8.10          -0.10  (VIOLATED) 
+
+   u_regs/HFSNET_755           16.00          16.10          -0.10  (VIOLATED) 
+     PIN : u_regs/HFSBUF_17_853/Y
+                               16.00          16.10          -0.10  (VIOLATED) 
+
+   u_regs/b_buf[23][4]          8.00           8.10          -0.10  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[23][4]/Q
+                                8.00           8.10          -0.10  (VIOLATED) 
+
+   u_regs/c_buf[26][21]         8.00           8.09          -0.09  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[26][21]/Q
+                                8.00           8.09          -0.09  (VIOLATED) 
+
+   aps_rename_759_              8.00           8.09          -0.09  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_5409/Y
+                                8.00           8.09          -0.09  (VIOLATED) 
+
+   u_regs/c_buf[29][6]          8.00           8.09          -0.09  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[29][6]/Q
+                                8.00           8.09          -0.09  (VIOLATED) 
+
+   u_array/pe_acc_out[1][0][7]
+                                8.00           8.08          -0.08  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[0].pe_inst/accumulator_reg[7]/Q
+                                8.00           8.08          -0.08  (VIOLATED) 
+
+   u_array/act_wire[2][3][3]
+                               16.00          16.08          -0.08  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[2].pe_inst/HFSBUF_385_2234/Y
+                               16.00          16.08          -0.08  (VIOLATED) 
+
+   u_regs/a_buf[7][6]           8.00           8.08          -0.08  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[7][6]/Q
+                                8.00           8.08          -0.08  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[6].pe_inst/n35
+                                8.00           8.08          -0.08  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[6].pe_inst/U37/Y
+                                8.00           8.08          -0.08  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[1].pe_inst/HFSNET_29
+                               32.00          32.07          -0.07  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[1].pe_inst/HFSINV_1399_3593/Y
+                               32.00          32.07          -0.07  (VIOLATED) 
+
+   u_regs/n365_CDR1             8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_regs/U1193/Y       8.00           8.07          -0.07  (VIOLATED) 
+
+   u_regs/c_buf[15][10]         8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[15][10]/Q
+                                8.00           8.07          -0.07  (VIOLATED) 
+
+   u_regs/c_buf[58][20]         8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[58][20]/Q
+                                8.00           8.07          -0.07  (VIOLATED) 
+
+   u_array/wgt_wire[3][6][5]
+                               16.00          16.07          -0.07  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[6].pe_inst/HFSBUF_342_1807/Y
+                               16.00          16.07          -0.07  (VIOLATED) 
+
+   u_regs/c_buf[57][3]          8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[57][3]/Q
+                                8.00           8.07          -0.07  (VIOLATED) 
+
+   u_array/n1123                8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_array/U1515/Y      8.00           8.07          -0.07  (VIOLATED) 
+
+   u_regs/c_buf[39][7]          8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[39][7]/Q
+                                8.00           8.07          -0.07  (VIOLATED) 
+
+   u_array/pe_acc_out[6][6][1]
+                                8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[6].pe_inst/accumulator_reg[1]/Q
+                                8.00           8.07          -0.07  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][27]
+                                8.00           8.07          -0.07  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[27]/Q
+                                8.00           8.07          -0.07  (VIOLATED) 
+
+   u_regs/HFSNET_1817          32.00          32.06          -0.06  (VIOLATED) 
+     PIN : u_regs/HFSBUF_1198_3934/Y
+                               32.00          32.06          -0.06  (VIOLATED) 
+
+   u_array/wgt_wire[7][7][3]
+                                8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[7].pe_inst/w_out_reg[3]/Q
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   u_array/pe_acc_out[5][0][3]
+                                8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[0].pe_inst/accumulator_reg[3]/Q
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   u_regs/c_buf[59][13]         8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[59][13]/Q
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   u_regs/n2249                 8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_regs/U5801/Y       8.00           8.06          -0.06  (VIOLATED) 
+
+   u_regs/b_buf[30][2]          8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[30][2]/Q
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   u_regs/n399                  8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_regs/U1230/Y       8.00           8.06          -0.06  (VIOLATED) 
+
+   u_regs/tmp_net765            8.00           8.06          -0.06  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_2_6793/Y
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   u_array/n780_CDR1            8.00           8.05          -0.05  (VIOLATED) 
+     PIN : u_array/U1143/Y      8.00           8.05          -0.05  (VIOLATED) 
+
+   u_array/n531                 8.00           8.05          -0.05  (VIOLATED) 
+     PIN : u_array/U740/Y       8.00           8.05          -0.05  (VIOLATED) 
+
+   u_array/gen_row[6].gen_col[7].pe_inst/n173
+                                8.00           8.05          -0.05  (VIOLATED) 
+     PIN : u_array/gen_row[6].gen_col[7].pe_inst/U209/Y
+                                8.00           8.05          -0.05  (VIOLATED) 
+
+   u_regs/c_buf[57][16]         8.00           8.05          -0.05  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[57][16]/Q
+                                8.00           8.05          -0.05  (VIOLATED) 
+
+   u_array/pe_acc_out[5][0][11]
+                                8.00           8.05          -0.05  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[0].pe_inst/accumulator_reg[11]/Q
+                                8.00           8.05          -0.05  (VIOLATED) 
+
+   u_array/wgt_wire[2][1][4]
+                               16.00          16.05          -0.05  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[1].pe_inst/HFSBUF_303_1750/Y
+                               16.00          16.05          -0.05  (VIOLATED) 
+
+   u_array/HFSNET_133          32.00          32.04          -0.04  (VIOLATED) 
+     PIN : u_array/HFSBUF_958_3736/Y
+                               32.00          32.04          -0.04  (VIOLATED) 
+
+   u_regs/b_buf[22][4]          8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[22][4]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_regs/HFSNET_1428           8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_regs/HFSINV_451_2807/Y
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_regs/b_buf[5][3]           8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[5][3]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_array/gen_row[0].gen_col[4].pe_inst/product_pipe[15]
+                                8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[4].pe_inst/product_pipe_reg[15]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_regs/b_buf[19][6]          8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[19][6]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_regs/b_buf[60][1]          8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_regs/b_buf_reg[60][1]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_array/HFSNET_249          32.00          32.04          -0.04  (VIOLATED) 
+     PIN : u_array/HFSBUF_22407_4143/Y
+                               32.00          32.04          -0.04  (VIOLATED) 
+
+   u_regs/c_buf[14][30]         8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[14][30]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_array/pe_acc_out[1][7][30]
+                                8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[7].pe_inst/accumulator_reg[30]/Q
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_array/gen_row[1].gen_col[4].pe_inst/HFSNET_14
+                               16.00          16.04          -0.04  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[4].pe_inst/HFSBUF_423_2418/Y
+                               16.00          16.04          -0.04  (VIOLATED) 
+
+   arr_result_data[168]         8.00           8.04          -0.04  (VIOLATED) 
+     PIN : u_array/ctmTdsLR_1_7676/Y
+                                8.00           8.04          -0.04  (VIOLATED) 
+
+   u_regs/c_buf[43][30]         8.00           8.03          -0.03  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[43][30]/Q
+                                8.00           8.03          -0.03  (VIOLATED) 
+
+   u_regs/ZINV_34_11           16.00          16.03          -0.03  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_10993/Y
+                               16.00          16.03          -0.03  (VIOLATED) 
+
+   u_regs/HFSNET_453           16.00          16.03          -0.03  (VIOLATED) 
+     PIN : u_regs/HFSBUF_32_531/Y
+                               16.00          16.03          -0.03  (VIOLATED) 
+
+   u_regs/n1132_CDR1            8.00           8.03          -0.03  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_6550/Y
+                                8.00           8.03          -0.03  (VIOLATED) 
+
+   u_regs/c_buf[14][2]          8.00           8.03          -0.03  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[14][2]/Q
+                                8.00           8.03          -0.03  (VIOLATED) 
+
+   u_regs/c_buf[60][26]         8.00           8.03          -0.03  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[60][26]/Q
+                                8.00           8.03          -0.03  (VIOLATED) 
+
+   u_regs/HFSNET_1458           8.00           8.03          -0.03  (VIOLATED) 
+     PIN : u_regs/HFSINV_312_2859/Y
+                                8.00           8.03          -0.03  (VIOLATED) 
+
+   u_regs/c_buf[6][2]           8.00           8.03          -0.03  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[6][2]/Q
+                                8.00           8.03          -0.03  (VIOLATED) 
+
+   u_array/wgt_wire[2][1][3]
+                               16.00          16.02          -0.02  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[1].pe_inst/HFSBUF_312_1749/Y
+                               16.00          16.02          -0.02  (VIOLATED) 
+
+   u_array/gen_row[5].gen_col[7].pe_inst/HFSNET_20
+                               16.00          16.02          -0.02  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[7].pe_inst/HFSINV_581_3453/Y
+                               16.00          16.02          -0.02  (VIOLATED) 
+
+   u_regs/a_buf[24][2]          8.00           8.02          -0.02  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[24][2]/Q
+                                8.00           8.02          -0.02  (VIOLATED) 
+
+   u_regs/n274                  8.00           8.02          -0.02  (VIOLATED) 
+     PIN : u_regs/ctmTdsLR_1_8133/Y
+                                8.00           8.02          -0.02  (VIOLATED) 
+
+   u_regs/HFSNET_98            16.00          16.02          -0.02  (VIOLATED) 
+     PIN : u_regs/HFSBUF_2_120/Y
+                               16.00          16.02          -0.02  (VIOLATED) 
+
+   u_regs/c_buf[58][0]          8.00           8.02          -0.02  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[58][0]/Q
+                                8.00           8.02          -0.02  (VIOLATED) 
+
+   u_array/pe_acc_out[1][6][7]
+                                8.00           8.02          -0.02  (VIOLATED) 
+     PIN : u_array/gen_row[1].gen_col[6].pe_inst/accumulator_reg[7]/Q
+                                8.00           8.02          -0.02  (VIOLATED) 
+
+   u_array/HFSNET_150          32.00          32.01          -0.01  (VIOLATED) 
+     PIN : u_array/HFSBUF_1433_3753/Y
+                               32.00          32.01          -0.01  (VIOLATED) 
+
+   u_regs/HFSNET_1469           8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_regs/HFSINV_465_2879/Y
+                                8.00           8.01          -0.01  (VIOLATED) 
+
+   u_array/n452_CDR1            8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_array/U647/Y       8.00           8.01          -0.01  (VIOLATED) 
+
+   u_regs/n5594                16.00          16.01          -0.01  (VIOLATED) 
+     PIN : u_regs/U2168/Y      16.00          16.01          -0.01  (VIOLATED) 
+
+   u_regs/a_buf[37][7]          8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_regs/a_buf_reg[37][7]/Q
+                                8.00           8.01          -0.01  (VIOLATED) 
+
+   u_regs/c_buf[28][26]         8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_regs/c_buf_reg[28][26]/Q
+                                8.00           8.01          -0.01  (VIOLATED) 
+
+   u_regs/ZCTSNET_2145          8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_regs/ZCTSINV_147723_4721/Y
+                                8.00           8.01          -0.01  (VIOLATED) 
+
+   u_array/gen_row[2].gen_col[4].pe_inst/HFSNET_24
+                               16.00          16.01          -0.01  (VIOLATED) 
+     PIN : u_array/gen_row[2].gen_col[4].pe_inst/HFSINV_758_3136/Y
+                               16.00          16.01          -0.01  (VIOLATED) 
+
+   u_regs/n3479                 8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_regs/U5534/Y       8.00           8.01          -0.01  (VIOLATED) 
+
+   u_array/pe_acc_out[0][0][14]
+                                8.00           8.01          -0.01  (VIOLATED) 
+     PIN : u_array/gen_row[0].gen_col[0].pe_inst/accumulator_reg[14]/Q
+                                8.00           8.01          -0.01  (VIOLATED) 
+
+   u_array/pe_acc_out[5][2][7]
+                                8.00           8.00          -0.00  (VIOLATED) 
+     PIN : u_array/gen_row[5].gen_col[2].pe_inst/accumulator_reg[7]/Q
+                                8.00           8.00          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 670
+
+
+   Mode: func Corner: nom
+   Scenario: func::nom
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 672
+1
